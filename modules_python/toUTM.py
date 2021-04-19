@@ -15,8 +15,9 @@ class rtmaps_python(BaseComponent):
 
     #configuration des I/O
     def Dynamic(self):
-        self.add_input("in", rtmaps.types.ANY)
-        self.add_output("out", rtmaps.types.AUTO);
+        self.add_input("long_lat", rtmaps.types.ANY)
+        self.add_output("UTMx", rtmaps.types.AUTO);
+        self.add_output("UTMy", rtmaps.types.AUTO);
 
     #appel a la creation
     def Birth(self):
@@ -26,16 +27,16 @@ class rtmaps_python(BaseComponent):
     def Core(self):
         entree = self.inputs["in"].ioelt #on récupère l'entrée sous forme l'ioelt (voir doc)
 
-        longitude = entree.data[0]
-        latitude = entree.data[1]
+        longitude = entree.data[1]
+        latitude = entree.data[0]
 
         utm_conversion = utm.from_latlon(latitude,longitude)
         Utmx = utm_conversion[0]
         Utmy = utm_conversion[1]
-        sortie = [Utmx,Utmy]
 
-        self.outputs["out"].write(sortie) #on envoie l'output sur la sortie du module
+        self.outputs["UTMx"].write(Utmx) #on envoie l'output sur la sortie du module
+        self.outouts["UTMy"].write(Utmy)
 
     #destroy
     def Death(self):
-        print("         Why did you kill me !??        :'(")
+        print("         Why did you kill me !??        :'(") 
