@@ -25,7 +25,7 @@ class rtmaps_python(BaseComponent):
 
     #called every input
     def Core(self):
-        entree = self.inputs["in"].ioelt #on récupère l'entrée sous forme l'ioelt (voir doc)
+        entree = self.inputs["long_lat"].ioelt #on récupère l'entrée sous forme l'ioelt (voir doc)
 
         longitude = entree.data[1]
         latitude = entree.data[0]
@@ -35,7 +35,7 @@ class rtmaps_python(BaseComponent):
         Utmy = utm_conversion[1]
 
         self.outputs["UTMx"].write(Utmx) #on envoie l'output sur la sortie du module
-        self.outouts["UTMy"].write(Utmy)
+        self.outputs["UTMy"].write(Utmy)
 
     #destroy
     def Death(self):
