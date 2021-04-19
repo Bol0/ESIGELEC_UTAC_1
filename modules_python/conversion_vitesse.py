@@ -20,7 +20,8 @@ class rtmaps_python(BaseComponent):
 
     #configuration des I/O
     def Dynamic(self):
-        self.add_input("acceleration", rtmaps.types.ANY)
+        self.add_input("angle_erreur", rtmaps.types.ANY)
+        self.add_input("distance", rtmaps.types.ANY)
         self.add_output("vitesse_laterale", rtmaps.types.AUTO)
         self.add_output("vitesse_longitudinale", rtmaps.types.AUTO);
 
@@ -30,18 +31,19 @@ class rtmaps_python(BaseComponent):
 
     #called every input
     def Core(self):
-        latitude=self.inputs["Latitude"].ioelt
-        longitude=self.inputs["Longitude"].ioelt
+        angle=self.inputs["angle_erreur"].ioelt
+        distance=self.inputs["distance"].ioelt
+
+        #on calcule la vitesse
+        distance_points = 1 #distance entres les points échantillonées en m
+        vitesse_max = 4 #vitesse map en sortie en m/s
+        vitesse_norme = (distance/distance_points)*vitesse_max
+        if(vitesse_norme > vitesse_max): #si la norme de vitesse depasse la vitesse max, on la sature
+            vitesse_norme = vitesse_max
         
-        self.q1.append(latitude.data) #on ajoute l'entrée a la fin de la file
-        self.q1.pop(0)
-        
-        self.q2.append(longitude.data) #on ajoute l'entrée a la fin de la file
-        self.q2.pop(0)
-        
-        utm_conversion = utm.from_latlon(latitude,longitude)
-        Utmx= utm_conversion [0]
-        Utmy= utm_conversion [1]
+
+        vit_long = vitesse_norme*sin(angle)
+        vit_lat = vitesse_norme*cos(angle)
         
         self.outputs["vitesse_laterale"].write(Utmx)
         self.outputs["vitesse_longitudinale"].write(Utmx)
