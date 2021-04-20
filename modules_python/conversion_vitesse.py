@@ -21,8 +21,7 @@ class rtmaps_python(BaseComponent):
 
     #configuration des I/O
     def Dynamic(self):
-        self.add_input("angle_erreur", rtmaps.types.ANY)
-        self.add_input("distance_point", rtmaps.types.ANY)
+        self.add_input("angle_distance", rtmaps.types.ANY)
         self.add_input("isObstacle", rtmaps.types.ANY)
         self.add_output("vitesse_laterale", rtmaps.types.AUTO)
         self.add_output("vitesse_longitudinale", rtmaps.types.AUTO);

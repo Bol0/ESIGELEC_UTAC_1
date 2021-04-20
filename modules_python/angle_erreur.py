@@ -16,14 +16,14 @@ class rtmaps_python(BaseComponent):
 
     # configuration des I/O
     def Dynamic(self):
-        self.add_input("UTMxa", rtmaps.types.ANY)  # current x position of the robot
-        self.add_input("UTMya", rtmaps.types.ANY)  # current y position of the robot
-        self.add_input("UTMxb", rtmaps.types.ANY)  # x position of the ping
-        self.add_input("UTMyb", rtmaps.types.ANY)  # y position of the ping
-        self.add_input("Eb", rtmaps.types.ANY)  # elevation of point B
-        self.add_input("Ea", rtmaps.types.ANY)  # elevation of point A
-        self.add_output("D", rtmaps.types.AUTO);  # distance between those 2 points through an uneven terrain
-        self.add_output("angle", rtmaps.types.AUTO);  # the angle between the two points in rad
+        #self.add_input("UTMxa", rtmaps.types.ANY)  # current x position of the robot
+        #self.add_input("UTMya", rtmaps.types.ANY)  # current y position of the robot
+        #self.add_input("UTMxb", rtmaps.types.ANY)  # x position of the ping
+        #self.add_input("UTMyb", rtmaps.types.ANY)  # y position of the ping
+        #self.add_input("Eb", rtmaps.types.ANY)  # elevation of point B
+        #self.add_input("Ea", rtmaps.types.ANY)  # elevation of point A
+        self.add_input("x_y", rtmaps.types.ANY)  # elevation of point B
+        self.add_output("angle_distance", rtmaps.types.AUTO);  # the angle between the two points in rad
 
     # appel a la creation
     def Birth(self):

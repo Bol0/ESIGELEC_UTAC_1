@@ -16,8 +16,7 @@ class rtmaps_python(BaseComponent):
     #configuration des I/O
     def Dynamic(self):
         self.add_input("long_lat", rtmaps.types.ANY)
-        self.add_output("UTMx", rtmaps.types.AUTO);
-        self.add_output("UTMy", rtmaps.types.AUTO);
+        self.add_output("UTM", rtmaps.types.AUTO);
 
     #appel a la creation
     def Birth(self):
@@ -34,8 +33,7 @@ class rtmaps_python(BaseComponent):
         Utmx = utm_conversion[0]
         Utmy = utm_conversion[1]
 
-        self.outputs["UTMx"].write(Utmx) #on envoie l'output sur la sortie du module
-        self.outputs["UTMy"].write(Utmy)
+        self.outputs["UTM"].write([Utmx, Utmy]) #on envoie l'output sur la sortie du module
 
     #destroy
     def Death(self):
