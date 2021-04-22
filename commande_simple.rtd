@@ -45,7 +45,7 @@
     <Property LongName="angle_erreur.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="angle_erreur.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="angle_erreur.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="angle_erreur.pythonPID" Type="1">16244</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="angle_erreur.pythonPID" Type="1">22724</ReadOnlyProperty>
     <Property LongName="angle_erreur.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="angle_erreur.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="angle_erreur.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
@@ -85,7 +85,7 @@
     <Property LongName="changement_repere.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="changement_repere.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="changement_repere.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="changement_repere.pythonPID" Type="1">20648</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="changement_repere.pythonPID" Type="1">18576</ReadOnlyProperty>
     <Property LongName="changement_repere.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="changement_repere.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="changement_repere.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
@@ -122,42 +122,6 @@
     <Property LongName="csv_importer_1.priority" Type="1">128</Property>
     <Property LongName="csv_importer_1.autoStart" Type="0">true</Property>
   </Component>
-  <Component InstanceName="detection_obstacle" Model="PythonBridge" Version="3.0.3" x="1136" y="464" z="0">
-    <Input LongName="detection_obstacle.donnee_capteurs" Name="donnee_capteurs">
-      <Property LongName="detection_obstacle.donnee_capteurs.readerType" Type="1">0</Property>
-      <Property LongName="detection_obstacle.donnee_capteurs.subsampling" Type="1">1</Property>
-    </Input>
-    <Output LongName="detection_obstacle.ditance_obstacle" Name="ditance_obstacle">
-      <Property LongName="detection_obstacle.ditance_obstacle.subsampling" Type="1">1</Property>
-      <Property LongName="detection_obstacle.ditance_obstacle.fifosize" Type="1">16</Property>
-      <Property LongName="detection_obstacle.ditance_obstacle.periodic" Type="0">false</Property>
-    </Output>
-    <Property LongName="detection_obstacle.guard_begin" Type="0" SubType="128">true</Property>
-    <Property LongName="detection_obstacle.internalInputs" Type="3" SubType="128"><![CDATA[donnee_capteurs;1==]]></Property>
-    <Property LongName="detection_obstacle.internalOutputs" Type="3" SubType="128"><![CDATA[ditance_obstacle;0==;0]]></Property>
-    <Property LongName="detection_obstacle.internalProperties" Type="3" SubType="128"><![CDATA[]]></Property>
-    <ReadOnlyProperty LongName="detection_obstacle.advance_begin_configuration" Type="3" SubType="256"><![CDATA[Advanced Configuration]]></ReadOnlyProperty>
-    <Property LongName="detection_obstacle.deathBehavior" Type="4"><![CDATA[3|1|WAIT FOR PROCESS INDEFINITELY|KILL PROCESS AFTER TIMEOUT (5sec)|START ANOTHER PROCESS]]></Property>
-    <Property LongName="detection_obstacle.logDebug" Type="0">false</Property>
-    <Property LongName="detection_obstacle.showTracebackInConsole" Type="0">true</Property>
-    <Property LongName="detection_obstacle.autoReloadSubModules" Type="0">true</Property>
-    <Property LongName="detection_obstacle.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="detection_obstacle.pythonPID" Type="1">6704</ReadOnlyProperty>
-    <Property LongName="detection_obstacle.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
-    <ReadOnlyProperty LongName="detection_obstacle.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
-    <ReadOnlyProperty LongName="detection_obstacle.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
-    <Property LongName="detection_obstacle.pythonInstallationFolder" Type="3" SubType="32"><![CDATA[AUTO/]]></Property>
-    <Property LongName="detection_obstacle.pythonLogDirectory" Type="3" SubType="32"><![CDATA[C:/Users/bolo.LAPTOP-0A1UK5DI/RTMaps-4.0/python_log/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../../RTMaps-4.0/python_log]]></Relative></Property>
-    <Property LongName="detection_obstacle.className" Type="3"><![CDATA[rtmaps_python]]></Property>
-    <Property LongName="detection_obstacle.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/bolo.LAPTOP-0A1UK5DI/Documents/ESIG/S8/repo git/modules_python/detection_obstacles.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/modules_python/detection_obstacles.py]]></Relative></Property>
-    <Property LongName="detection_obstacle.readingPolicy" Type="4"><![CDATA[4|3|Synchro|Reactive|Sampling|Triggered by First Input]]></Property>
-    <ReadOnlyProperty LongName="detection_obstacle.prop_end_subsection_default_opened" Type="0" SubType="512">true</ReadOnlyProperty>
-    <ReadOnlyProperty LongName="detection_obstacle.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
-    <ReadOnlyProperty LongName="detection_obstacle.userSubsectionEnd" Type="0" SubType="512">true</ReadOnlyProperty>
-    <Property LongName="detection_obstacle.threaded" Type="0">true</Property>
-    <Property LongName="detection_obstacle.priority" Type="1">128</Property>
-    <Property LongName="detection_obstacle.autoStart" Type="0">true</Property>
-  </Component>
   <Component InstanceName="echantillonage" Model="PythonBridge" Version="3.0.3" x="344" y="408" z="0">
     <Input LongName="echantillonage.latP" Name="latP">
       <Property LongName="echantillonage.latP.readerType" Type="1">0</Property>
@@ -190,7 +154,7 @@
     <Property LongName="echantillonage.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="echantillonage.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="echantillonage.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="echantillonage.pythonPID" Type="1">20692</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="echantillonage.pythonPID" Type="1">5672</ReadOnlyProperty>
     <Property LongName="echantillonage.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="echantillonage.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="echantillonage.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
@@ -235,7 +199,7 @@
     <Property LongName="gestion_vitesse.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="gestion_vitesse.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="gestion_vitesse.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="gestion_vitesse.pythonPID" Type="1">12752</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="gestion_vitesse.pythonPID" Type="1">14372</ReadOnlyProperty>
     <Property LongName="gestion_vitesse.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="gestion_vitesse.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="gestion_vitesse.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
@@ -315,7 +279,7 @@
     <Property LongName="toUTM.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="toUTM.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="toUTM.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="toUTM.pythonPID" Type="1">17252</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="toUTM.pythonPID" Type="1">10576</ReadOnlyProperty>
     <Property LongName="toUTM.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="toUTM.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="toUTM.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
@@ -331,7 +295,7 @@
     <Property LongName="toUTM.priority" Type="1">128</Property>
     <Property LongName="toUTM.autoStart" Type="0">true</Property>
   </Component>
-  <Component InstanceName="toUTM_1" Model="PythonBridge" Version="3.0.3" x="576" y="408" z="0">
+  <Component InstanceName="toUTM_1" Model="PythonBridge" Version="3.0.3" x="552" y="408" z="0">
     <Input LongName="toUTM_1.long_lat" Name="long_lat">
       <Property LongName="toUTM_1.long_lat.readerType" Type="1">0</Property>
       <Property LongName="toUTM_1.long_lat.subsampling" Type="1">1</Property>
@@ -351,7 +315,7 @@
     <Property LongName="toUTM_1.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="toUTM_1.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="toUTM_1.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="toUTM_1.pythonPID" Type="1">3724</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="toUTM_1.pythonPID" Type="1">16696</ReadOnlyProperty>
     <Property LongName="toUTM_1.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="toUTM_1.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="toUTM_1.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
@@ -406,7 +370,6 @@
   <Connection Output="Vectorizer_1.outputFloat" Input="changement_repere.UTM_vehicule_euler"/>
   <Connection Output="toUTM_1.UTM" Input="changement_repere.UTM_trajectoire"/>
   <Connection Output="angle_erreur.angle_distance" Input="gestion_vitesse.angle_distance"/>
-  <Connection Output="detection_obstacle.ditance_obstacle" Input="gestion_vitesse.isObstacle"/>
   <Connection Output="Player_1.SocketReceiver_3_5_3.posesIMU" Input="toUTM.long_lat">
     <Replay Method="numeric_binary"/>
   </Connection>
@@ -424,7 +387,6 @@
     <ConnectionShape InstanceName="changement_repere.UTM_vehicule" color="0"/>
     <ConnectionShape InstanceName="changement_repere.UTM_vehicule_euler" color="0"/>
     <ConnectionShape InstanceName="gestion_vitesse.angle_distance" color="0"/>
-    <ConnectionShape InstanceName="gestion_vitesse.isObstacle" color="0"/>
     <ConnectionShape InstanceName="toUTM.long_lat" color="0"/>
     <ConnectionShape InstanceName="toUTM_1.long_lat" color="0"/>
     <ConnectionShape InstanceName="Vectorizer_1.input1" color="0"/>
