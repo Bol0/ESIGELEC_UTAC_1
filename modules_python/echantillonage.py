@@ -6,8 +6,8 @@ from rtmaps.base_component import BaseComponent
 import pyproj  # in pyproj library there is a methdod called Geod
 import csv
 
-show = False
-path = "C:/Users/bolo.LAPTOP-0A1UK5DI/Documents/ESIG/S8/repo git/records/record1/trajectory.csv"
+log = True
+path = "C:/Users/bolo.LAPTOP-0A1UK5DI/Documents/ESIG/S8/repo git/records/record1/trajectoryCise.csv"
 
 class rtmaps_python(BaseComponent):
     # constructeur de la classe
@@ -31,9 +31,9 @@ class rtmaps_python(BaseComponent):
             x = len(data)
             # print("x =" +str(x))
             # print(data[0][1])
+        show = True
         # WGS-84 is the coordinate system used by GPS
-        wgs84_geod = pyproj.CRS(
-            'WGS 84').get_geod()  # this method is used to calculate the distance and the angle between the given points directly and it keeps updating giving us a fairly smooth curve
+        wgs84_geod = pyproj.CRS('WGS 84').get_geod()  # this method is used to calculate the distance and the angle between the given points directly and it keeps updating giving us a fairly smooth curve
         i = 1
         k = 1
         result = []
@@ -53,27 +53,33 @@ class rtmaps_python(BaseComponent):
                 lat, lon = latP1, lonP1
 
             # keeps calculating the distance and the angle to make it smooth
-            az, _, dist = wgs84_geod.inv(lon, lat, lonP2,
-                                         latP2)  # the azimuth is the bearing. The angle between the points (https://pyproj4.github.io/pyproj/stable/api/geod.html)
+            az, _, dist = wgs84_geod.inv(lon, lat, lonP2, latP2)  # the azimuth is the bearing. The angle between the points (https://pyproj4.github.io/pyproj/stable/api/geod.html)
 
             if dist == delta:  # if its equal put the starting coordinates on the list and come out of the while loop
                 result.append((lat, lon))
 
             if dist > delta:  # if the distance greater than 1m, put the starting coordinates on the list, then move to another set of coordinates which are located in 1m
-                result.append((lat, lon))
-                lon, lat, _ = wgs84_geod.fwd(lon, lat, az,
-                                             delta)  # create a point exactly after 1m and move to that point
+                while (True):
+                    result.append((lat, lon))
+                    lon, lat, _ = wgs84_geod.fwd(lon, lat, az,
+                                                 delta)  # create a point exactly after 1m and move to that point
+                    az, _, dist = wgs84_geod.inv(lon, lat, lonP2, latP2)
 
+                    if dist == delta:
+                        break
+
+                    if dist < delta:
+                        break
             # if the distance is less than 1 meter
             if dist < delta:
-                i = i - 1
+                k = k+1
 
             i = i + 1
             k = k + 1
 
-        self.outputs["points_traj"].write(result)
 
-        if (show == True):
+
+        if (log == True):
             with open('Book1.csv', 'w', newline='') as csvfile:
                 writer = csv.writer(csvfile, delimiter=';')
                 writer.writerows(result)
@@ -81,6 +87,7 @@ class rtmaps_python(BaseComponent):
         y = len(result)
         for j in range(y):
             self.outputs["points_traj"].write(result[j])
+        exit(0)
 
     # destroy
     def Death(self):

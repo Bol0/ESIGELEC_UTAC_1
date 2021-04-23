@@ -23,8 +23,8 @@ class rtmaps_python(BaseComponent):
     def Dynamic(self):
         self.add_input("angle_distance", rtmaps.types.ANY)
         self.add_input("isObstacle", rtmaps.types.ANY)
-        self.add_output("vitesse_laterale", rtmaps.types.AUTO)
-        self.add_output("vitesse_longitudinale", rtmaps.types.AUTO);
+        self.add_output("vitesse_laterale", rtmaps.types.FLOAT64)
+        self.add_output("vitesse_longitudinale", rtmaps.types.FLOAT64);
 
     #appel a la creation
     def Birth(self):
@@ -32,27 +32,31 @@ class rtmaps_python(BaseComponent):
 
     #called every input
     def Core(self):
-        angle=self.inputs["angle_erreur"].ioelt.data
-        distance=self.inputs["distance_point"].ioelt.data
-        obstacle=self.inputs["isObstacle"].ioelt.data
+        in1 = self.inputs["angle_distance"].ioelt
+        angle = in1.data[0]
+        distance = in1.data[1]
+        if("isObstacle" in self.inputs):
+            obstacle = self.inputs["isObstacle"].ioelt.data
+        else:
+            obstacle = 0
 
         #on calcule la vitesse
         distance_points = 1 #distance entres les points échantillonées en m
-        vitesse_max = 4 #vitesse map en sortie en m/s
+        vitesse_max = 1 #vitesse map en sortie en m/s
         vitesse_norme = (distance/distance_points)*vitesse_max
         if(vitesse_norme > vitesse_max): #si la norme de vitesse depasse la vitesse max, on la sature
             vitesse_norme = vitesse_max
         
 
-        vit_long = vitesse_norme*math.cos(angle)
-        vit_lat = vitesse_norme*math.sin(angle)
+        vit_long = vitesse_norme
+        vit_lat = 1*angle
 
         if(obstacle == 1):#arret du robot
             vit_long = 0
             vit_lat = 0
         
-        self.outputs["vitesse_laterale"].write(vit_lat)
-        self.outputs["vitesse_longitudinale"].write(vit_long)
+        self.outputs["vitesse_laterale"].write(float(vit_lat))
+        self.outputs["vitesse_longitudinale"].write(float(vit_long))
 
 
 

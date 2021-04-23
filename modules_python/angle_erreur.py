@@ -45,7 +45,7 @@ class rtmaps_python(BaseComponent):
         #k = (self.inputs["UTMya"] - self.inputs["UTMyb"]) / (self.inputs["UTMxa"] - self.inputs["UTMxb"])
         
         
-        angle = math.atan2(X,Y)  # the angle in rad
+        angle = math.atan2(Y,X)  # the angle in rad
 
         # Sending D as an output
         self.outputs["distancePoint"].write(distancePoint)

@@ -7,6 +7,7 @@ from rtmaps.base_component import BaseComponent
 from scipy.spatial.transform import Rotation as R
 
 trajectoire = []
+indexPosition = 0
 
 class rtmaps_python(BaseComponent):
     #constructeur de la classe
@@ -23,9 +24,12 @@ class rtmaps_python(BaseComponent):
     #appel a la creation
     def Birth(self):
         print("starting...");
+        trajectoire = []
+        indexPosition = 0
 
     #called every input
     def Core(self):
+        global indexPosition
         if(self.input_that_answered == 0): #entrée déclencé sur les données robot
             utmx=self.inputs["donnees"].ioelt.data[0]
             utmy=self.inputs["donnees"].ioelt.data[1]
@@ -60,7 +64,14 @@ class rtmaps_python(BaseComponent):
                 listedepointTraj.append([H3[0], H3[1]])
         
             #self.outputs["liste_points"].write(listedepointRobot)
-            self.outputs["x_y"].write(listedepointTraj[0])
+            if(math.sqrt(listedepointTraj[indexPosition][0]**2+ listedepointTraj[indexPosition][1]**2) < 0.5):
+                indexPosition += 1
+                print("passage au point suivant")
+            elif(indexPosition == len(listedepointTraj)-1) :
+                self.outputs["x_y"].write([0,0])
+            else :
+                self.outputs["x_y"].write(listedepointTraj[indexPosition])
+                #self.outputs["x_y"].write(listedepointTraj[0])
 
         elif(self.input_that_answered == 1): #entrée déclenché sur la trajectoire
             #enregistrement des points
