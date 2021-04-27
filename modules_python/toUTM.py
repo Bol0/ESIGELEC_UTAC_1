@@ -15,8 +15,8 @@ class rtmaps_python(BaseComponent):
 
     #configuration des I/O
     def Dynamic(self):
-        self.add_input("long_lat", rtmaps.types.ANY)
-        self.add_output("UTM", rtmaps.types.AUTO);
+        self.add_input("lat_long", rtmaps.types.ANY)
+        self.add_output("UTM", rtmaps.types.FLOAT64);
 
     #appel a la creation
     def Birth(self):
@@ -24,7 +24,7 @@ class rtmaps_python(BaseComponent):
 
     #called every input
     def Core(self):
-        entree = self.inputs["long_lat"].ioelt #on récupère l'entrée sous forme l'ioelt (voir doc)
+        entree = self.inputs["lat_long"].ioelt #on récupère l'entrée sous forme l'ioelt (voir doc)
 
         longitude = entree.data[1]
         latitude = entree.data[0]
