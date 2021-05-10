@@ -6,7 +6,7 @@ from rtmaps.base_component import BaseComponent
 import pyproj  # in pyproj library there is a methdod called Geod
 import csv
 
-log = True
+log = False
 path = "C:/Users/bolo.LAPTOP-0A1UK5DI/Documents/ESIG/S8/repo git/records/record1/trajectoryCise.csv"
 
 class rtmaps_python(BaseComponent):
@@ -75,7 +75,7 @@ class rtmaps_python(BaseComponent):
         #print("j = " + str(j))
 
         if (log == True):
-            with open('Book4.csv', 'w', newline='') as csvfile:
+            with open('ProcessedTrajectory.csv', 'w', newline='') as csvfile:
                 writer = csv.writer(csvfile, delimiter=';')
                 writer.writerows(result)
         exit(0)
