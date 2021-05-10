@@ -31,63 +31,56 @@ class rtmaps_python(BaseComponent):
             x = len(data)
             # print("x =" +str(x))
             # print(data[0][1])
-        show = True
+
         # WGS-84 is the coordinate system used by GPS
         wgs84_geod = pyproj.CRS('WGS 84').get_geod()  # this method is used to calculate the distance and the angle between the given points directly and it keeps updating giving us a fairly smooth curve
-        i = 1
-        k = 1
+
         result = []
 
         # The distance that we want the points to be( Here its 1 meter)
         delta = 1
 
-        while (k < x):
-
-            latP1 = data[i - 1][0]
-            lonP1 = data[i - 1][1]
+        i = 0;
+        for k in range(1, x):
+            latP1 = data[i][0]
+            lonP1 = data[i][1]
             latP2 = data[k][0]
             lonP2 = data[k][1]
 
-            if (i == 1):
+            if (i == 0) and (k == 1):
                 # our current position
                 lat, lon = latP1, lonP1
+            while True:
+                # keeps calculating the distance and the angle to make it smooth
+                az, _, dist = wgs84_geod.inv(lon, lat, lonP2,
+                                             latP2)  # the azimuth is the bearing. The angle between the points (https://pyproj4.github.io/pyproj/stable/api/geod.html)
 
-            # keeps calculating the distance and the angle to make it smooth
-            az, _, dist = wgs84_geod.inv(lon, lat, lonP2, latP2)  # the azimuth is the bearing. The angle between the points (https://pyproj4.github.io/pyproj/stable/api/geod.html)
-
-            if dist == delta:  # if its equal put the starting coordinates on the list and come out of the while loop
-                result.append((lat, lon))
-
-            if dist > delta:  # if the distance greater than 1m, put the starting coordinates on the list, then move to another set of coordinates which are located in 1m
-                while (True):
+                if dist > delta:
                     result.append((lat, lon))
                     lon, lat, _ = wgs84_geod.fwd(lon, lat, az,
                                                  delta)  # create a point exactly after 1m and move to that point
-                    az, _, dist = wgs84_geod.inv(lon, lat, lonP2, latP2)
 
-                    if dist == delta:
-                        break
+                if dist == delta:
+                    result.append((lat, lon))
+                    i = i + 1
+                    break
 
-                    if dist < delta:
-                        break
-            # if the distance is less than 1 meter
-            if dist < delta:
-                k = k+1
-
-            i = i + 1
-            k = k + 1
-
-
-
-        if (log == True):
-            with open('Book1.csv', 'w', newline='') as csvfile:
-                writer = csv.writer(csvfile, delimiter=';')
-                writer.writerows(result)
+                if dist < delta:
+                    break
 
         y = len(result)
+        # print(y)
         for j in range(y):
             self.outputs["points_traj"].write(result[j])
+        #print("j = " + str(j))
+
+        if (log == True):
+            with open('Book4.csv', 'w', newline='') as csvfile:
+                writer = csv.writer(csvfile, delimiter=';')
+                writer.writerows(result)
         exit(0)
+
+
 
     # destroy
     def Death(self):
