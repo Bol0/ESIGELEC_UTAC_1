@@ -5,19 +5,12 @@ import rtmaps.reading_policy
 from rtmaps.base_component import BaseComponent
 import math
 
-#script simple
-#on crée une entrée et une sortie
-#on moyenne l'entrée sur 10 échantillons
-#on envoie le résultat a la sortie
+#script de convertion entre distance et angle d'erreur vers vitesse longi/lat
 
 class rtmaps_python(BaseComponent):
     #constructeur de la classe
     def __init__(self):
         BaseComponent.__init__(self)
-
-        self.q1 = [0] #on init la file
-        for i in range(1, 11):
-            self.q1.append(i)
 
     #configuration des I/O
     def Dynamic(self):
@@ -41,22 +34,20 @@ class rtmaps_python(BaseComponent):
             obstacle = 0
 
         #on calcule la vitesse
-        distance_points = 1 #distance entres les points échantillonées en m
-        vitesse_max = 1 #vitesse map en sortie en m/s
-        vitesse_norme = (distance/distance_points)*vitesse_max
-        if(vitesse_norme > vitesse_max): #si la norme de vitesse depasse la vitesse max, on la sature
-            vitesse_norme = vitesse_max
+        vitesse_long = 1 #vitesse longitudinale de base en m/s
+        vitesse_lat = 2*angle #max 2 ou 3 rad
         
-
-        vit_long = vitesse_norme
-        vit_lat = 1*angle
-
+        
+        if (vitesse_lat >= 1):
+            vitesse_long = vitesse_long/(abs(vitesse_lat)*1)
+            
         if(obstacle == 1):#arret du robot
-            vit_long = 0
-            vit_lat = 0
         
-        self.outputs["vitesse_laterale"].write(float(vit_lat))
-        self.outputs["vitesse_longitudinale"].write(float(vit_long))
+            vitesse_long = 0
+            vitesse_lat = 0
+        
+        self.outputs["vitesse_laterale"].write(float(vitesse_lat))
+        self.outputs["vitesse_longitudinale"].write(float(vitesse_long))
 
 
 

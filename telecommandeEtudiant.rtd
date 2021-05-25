@@ -50,7 +50,7 @@
     <Property LongName="angle_erreur.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="angle_erreur.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="angle_erreur.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="angle_erreur.pythonPID" Type="1">16380</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="angle_erreur.pythonPID" Type="1">12388</ReadOnlyProperty>
     <Property LongName="angle_erreur.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="angle_erreur.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="angle_erreur.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
@@ -65,6 +65,53 @@
     <Property LongName="angle_erreur.threaded" Type="0">true</Property>
     <Property LongName="angle_erreur.priority" Type="1">128</Property>
     <Property LongName="angle_erreur.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="angleErreur" Model="DataViewer" Version="2.0.3" x="808" y="800" z="0">
+    <Input LongName="angleErreur.input_0" Name="input_0">
+      <Property LongName="angleErreur.input_0.readerType" Type="1">2</Property>
+      <Property LongName="angleErreur.input_0.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="angleErreur.input_1" Name="input_1">
+      <Property LongName="angleErreur.input_1.readerType" Type="1">2</Property>
+      <Property LongName="angleErreur.input_1.subsampling" Type="1">1</Property>
+    </Input>
+    <Property LongName="angleErreur.begin_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="angleErreur.widget_begin_config" Type="3" SubType="256"><![CDATA[General Configuration]]></ReadOnlyProperty>
+    <Property LongName="angleErreur.autoDirty" Type="0">true</Property>
+    <Property LongName="angleErreur.run" Type="0">true</Property>
+    <Property LongName="angleErreur.alwaysOnTop" Type="4"><![CDATA[4|0|Only at run time|Only at design time|No|Both at run time and design time]]></Property>
+    <Property LongName="angleErreur.moveable" Type="0">true</Property>
+    <Property LongName="angleErreur.hidden" Type="0">false</Property>
+    <Property LongName="angleErreur.title" Type="3"><![CDATA[]]></Property>
+    <Property LongName="angleErreur.x" Type="1">291</Property>
+    <Property LongName="angleErreur.y" Type="1">280</Property>
+    <Property LongName="angleErreur.width" Type="1">315</Property>
+    <Property LongName="angleErreur.height" Type="1">240</Property>
+    <Property LongName="angleErreur.end_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="angleErreur.widget_end_config" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="angleErreur.specific_begin_config" Type="3" SubType="256"><![CDATA[Specific Configuration]]></ReadOnlyProperty>
+    <Property LongName="angleErreur.nbInputs" Type="1">2</Property>
+    <Property LongName="angleErreur.compactMode" Type="0">false</Property>
+    <Property LongName="angleErreur.showInfo" Type="0">true</Property>
+    <Property LongName="angleErreur.showData" Type="0">true</Property>
+    <Property LongName="angleErreur.showPrettyTimestamp" Type="0">true</Property>
+    <Property LongName="angleErreur.float32Format" Type="3"><![CDATA[%9g]]></Property>
+    <Property LongName="angleErreur.float64Format" Type="3"><![CDATA[%9g]]></Property>
+    <Property LongName="angleErreur.integer8Format" Type="3"><![CDATA[%d]]></Property>
+    <Property LongName="angleErreur.integer16Format" Type="3"><![CDATA[%d]]></Property>
+    <Property LongName="angleErreur.integer32Format" Type="3"><![CDATA[%I32d]]></Property>
+    <Property LongName="angleErreur.integer64Format" Type="3"><![CDATA[%I64d]]></Property>
+    <Property LongName="angleErreur.unsignedInteger8Format" Type="3"><![CDATA[%u]]></Property>
+    <Property LongName="angleErreur.unsignedInteger16Format" Type="3"><![CDATA[%u]]></Property>
+    <Property LongName="angleErreur.unsignedInteger32Format" Type="3"><![CDATA[%I32u]]></Property>
+    <Property LongName="angleErreur.unsignedInteger64Format" Type="3"><![CDATA[%I64u]]></Property>
+    <Property LongName="angleErreur.hexDisplay" Type="0">false</Property>
+    <Property LongName="angleErreur.internalState" Type="3" SubType="128"><![CDATA[100;205]]></Property>
+    <Property LongName="angleErreur.expandedState" Type="3" SubType="128"><![CDATA[0|;0|]]></Property>
+    <ReadOnlyProperty LongName="angleErreur.specific_end_config" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="angleErreur.threaded" Type="0">true</Property>
+    <Property LongName="angleErreur.priority" Type="1">128</Property>
+    <Property LongName="angleErreur.autoStart" Type="0">true</Property>
   </Component>
   <Component InstanceName="Calc_8" Model="Calc" Version="2.0.0" x="792" y="24" z="0">
     <Input LongName="Calc_8.input" Name="input">
@@ -169,7 +216,7 @@
     <Property LongName="CAMERA_V.extWndHandle" Type="1">0</Property>
     <Property LongName="CAMERA_V.threaded" Type="0">true</Property>
     <Property LongName="CAMERA_V.priority" Type="1">128</Property>
-    <Property LongName="CAMERA_V.autoStart" Type="0">false</Property>
+    <Property LongName="CAMERA_V.autoStart" Type="0">true</Property>
   </Component>
   <Component InstanceName="changement_repere" Model="PythonBridge" Version="3.0.3" x="576" y="976" z="0">
     <Input LongName="changement_repere.donnees" Name="donnees">
@@ -187,15 +234,15 @@
     </Output>
     <Property LongName="changement_repere.guard_begin" Type="0" SubType="128">true</Property>
     <Property LongName="changement_repere.internalInputs" Type="3" SubType="128"><![CDATA[donnees;1==#donnees_Traj;1==]]></Property>
-    <Property LongName="changement_repere.internalOutputs" Type="3" SubType="128"><![CDATA[x_y;0==;0]]></Property>
-    <Property LongName="changement_repere.internalProperties" Type="3" SubType="128"><![CDATA[]]></Property>
+    <Property LongName="changement_repere.internalOutputs" Type="3" SubType="128"><![CDATA[x_y;11==;0]]></Property>
+    <Property LongName="changement_repere.internalProperties" Type="3" SubType="128"><![CDATA[distance_min||11||1]]></Property>
     <ReadOnlyProperty LongName="changement_repere.advance_begin_configuration" Type="3" SubType="256"><![CDATA[Advanced Configuration]]></ReadOnlyProperty>
     <Property LongName="changement_repere.deathBehavior" Type="4"><![CDATA[3|1|WAIT FOR PROCESS INDEFINITELY|KILL PROCESS AFTER TIMEOUT (5sec)|START ANOTHER PROCESS]]></Property>
     <Property LongName="changement_repere.logDebug" Type="0">false</Property>
     <Property LongName="changement_repere.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="changement_repere.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="changement_repere.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="changement_repere.pythonPID" Type="1">17212</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="changement_repere.pythonPID" Type="1">8136</ReadOnlyProperty>
     <Property LongName="changement_repere.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="changement_repere.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="changement_repere.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
@@ -207,10 +254,74 @@
     <Property LongName="changement_repere.timeout" Type="1">0</Property>
     <ReadOnlyProperty LongName="changement_repere.prop_end_subsection_default_opened" Type="0" SubType="512">true</ReadOnlyProperty>
     <ReadOnlyProperty LongName="changement_repere.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
+    <Property LongName="changement_repere.distance_min" Type="2">1</Property>
     <ReadOnlyProperty LongName="changement_repere.userSubsectionEnd" Type="0" SubType="512">true</ReadOnlyProperty>
     <Property LongName="changement_repere.threaded" Type="0">true</Property>
     <Property LongName="changement_repere.priority" Type="1">128</Property>
     <Property LongName="changement_repere.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="Conv2Text_1_1" Model="Conv2Text" Version="2.2.2" x="328" y="1200" z="0">
+    <Input LongName="Conv2Text_1_1.input" Name="input">
+      <Property LongName="Conv2Text_1_1.input.readerType" Type="1">0</Property>
+      <Property LongName="Conv2Text_1_1.input.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="Conv2Text_1_1.output" Name="output">
+      <Property LongName="Conv2Text_1_1.output.subsampling" Type="1">1</Property>
+      <Property LongName="Conv2Text_1_1.output.fifosize" Type="1">16</Property>
+      <Property LongName="Conv2Text_1_1.output.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="Conv2Text_1_1.format" Type="3"><![CDATA[%f]]></Property>
+    <Property LongName="Conv2Text_1_1.max_output_text_size" Type="1">1023</Property>
+    <Property LongName="Conv2Text_1_1.vectors_separator_char" Type="3"><![CDATA[;]]></Property>
+    <Property LongName="Conv2Text_1_1.append_final_char" Type="3"><![CDATA[]]></Property>
+    <Property LongName="Conv2Text_1_1.threaded" Type="0">false</Property>
+    <Property LongName="Conv2Text_1_1.priority" Type="1">128</Property>
+    <Property LongName="Conv2Text_1_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="convertion_vitesse" Model="PythonBridge" Version="3.0.3" x="1112" y="960" z="0">
+    <Input LongName="convertion_vitesse.angle_distance" Name="angle_distance">
+      <Property LongName="convertion_vitesse.angle_distance.readerType" Type="1">0</Property>
+      <Property LongName="convertion_vitesse.angle_distance.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="convertion_vitesse.isObstacle" Name="isObstacle">
+      <Property LongName="convertion_vitesse.isObstacle.readerType" Type="1">4</Property>
+      <Property LongName="convertion_vitesse.isObstacle.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="convertion_vitesse.vitesse_laterale" Name="vitesse_laterale">
+      <Property LongName="convertion_vitesse.vitesse_laterale.subsampling" Type="1">1</Property>
+      <Property LongName="convertion_vitesse.vitesse_laterale.fifosize" Type="1">16</Property>
+      <Property LongName="convertion_vitesse.vitesse_laterale.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="convertion_vitesse.vitesse_longitudinale" Name="vitesse_longitudinale">
+      <Property LongName="convertion_vitesse.vitesse_longitudinale.subsampling" Type="1">1</Property>
+      <Property LongName="convertion_vitesse.vitesse_longitudinale.fifosize" Type="1">16</Property>
+      <Property LongName="convertion_vitesse.vitesse_longitudinale.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="convertion_vitesse.guard_begin" Type="0" SubType="128">true</Property>
+    <Property LongName="convertion_vitesse.internalInputs" Type="3" SubType="128"><![CDATA[angle_distance;1==#isObstacle;1==]]></Property>
+    <Property LongName="convertion_vitesse.internalOutputs" Type="3" SubType="128"><![CDATA[vitesse_laterale;11==;0#vitesse_longitudinale;11==;0]]></Property>
+    <Property LongName="convertion_vitesse.internalProperties" Type="3" SubType="128"><![CDATA[]]></Property>
+    <ReadOnlyProperty LongName="convertion_vitesse.advance_begin_configuration" Type="3" SubType="256"><![CDATA[Advanced Configuration]]></ReadOnlyProperty>
+    <Property LongName="convertion_vitesse.deathBehavior" Type="4"><![CDATA[3|1|WAIT FOR PROCESS INDEFINITELY|KILL PROCESS AFTER TIMEOUT (5sec)|START ANOTHER PROCESS]]></Property>
+    <Property LongName="convertion_vitesse.logDebug" Type="0">false</Property>
+    <Property LongName="convertion_vitesse.showTracebackInConsole" Type="0">true</Property>
+    <Property LongName="convertion_vitesse.autoReloadSubModules" Type="0">true</Property>
+    <Property LongName="convertion_vitesse.memorySize" Type="1">10000000</Property>
+    <ReadOnlyProperty LongName="convertion_vitesse.pythonPID" Type="1">21080</ReadOnlyProperty>
+    <Property LongName="convertion_vitesse.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
+    <ReadOnlyProperty LongName="convertion_vitesse.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="convertion_vitesse.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
+    <Property LongName="convertion_vitesse.pythonInstallationFolder" Type="3" SubType="32"><![CDATA[AUTO/]]></Property>
+    <Property LongName="convertion_vitesse.pythonLogDirectory" Type="3" SubType="32"><![CDATA[C:/Users/bolo.LAPTOP-0A1UK5DI/RTMaps-4.0/python_log/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../../RTMaps-4.0/python_log]]></Relative></Property>
+    <Property LongName="convertion_vitesse.className" Type="3"><![CDATA[rtmaps_python]]></Property>
+    <Property LongName="convertion_vitesse.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/bolo.LAPTOP-0A1UK5DI/Documents/ESIG/S8/repo git/modules_python/conversion_vitesse.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/modules_python/conversion_vitesse.py]]></Relative></Property>
+    <Property LongName="convertion_vitesse.readingPolicy" Type="4"><![CDATA[4|3|Synchro|Reactive|Sampling|Triggered by First Input]]></Property>
+    <ReadOnlyProperty LongName="convertion_vitesse.prop_end_subsection_default_opened" Type="0" SubType="512">true</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="convertion_vitesse.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
+    <ReadOnlyProperty LongName="convertion_vitesse.userSubsectionEnd" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="convertion_vitesse.threaded" Type="0">true</Property>
+    <Property LongName="convertion_vitesse.priority" Type="1">128</Property>
+    <Property LongName="convertion_vitesse.autoStart" Type="0">true</Property>
   </Component>
   <Component InstanceName="DataViewerVlongiVRot" Model="DataViewer" Version="2.0.3" x="1352" y="72" z="0">
     <Input LongName="DataViewerVlongiVRot.input_0" Name="input_0">
@@ -229,8 +340,8 @@
     <Property LongName="DataViewerVlongiVRot.moveable" Type="0">true</Property>
     <Property LongName="DataViewerVlongiVRot.hidden" Type="0">false</Property>
     <Property LongName="DataViewerVlongiVRot.title" Type="3"><![CDATA[DataViewerVlongiVRot]]></Property>
-    <Property LongName="DataViewerVlongiVRot.x" Type="1">263</Property>
-    <Property LongName="DataViewerVlongiVRot.y" Type="1">651</Property>
+    <Property LongName="DataViewerVlongiVRot.x" Type="1">288</Property>
+    <Property LongName="DataViewerVlongiVRot.y" Type="1">698</Property>
     <Property LongName="DataViewerVlongiVRot.width" Type="1">302</Property>
     <Property LongName="DataViewerVlongiVRot.height" Type="1">296</Property>
     <Property LongName="DataViewerVlongiVRot.end_guard" Type="0" SubType="128">true</Property>
@@ -253,11 +364,45 @@
     <Property LongName="DataViewerVlongiVRot.unsignedInteger64Format" Type="3"><![CDATA[%I64u]]></Property>
     <Property LongName="DataViewerVlongiVRot.hexDisplay" Type="0">false</Property>
     <Property LongName="DataViewerVlongiVRot.internalState" Type="3" SubType="128"><![CDATA[100;192]]></Property>
-    <Property LongName="DataViewerVlongiVRot.expandedState" Type="3" SubType="128"><![CDATA[1|switcher_long.output;0|Info:switcher_long.output;1|Data:switcher_long.output;1|switcher_lat.output;0|Info:switcher_lat.output;1|Data:switcher_lat.output]]></Property>
+    <Property LongName="DataViewerVlongiVRot.expandedState" Type="3" SubType="128"><![CDATA[0|;0|]]></Property>
     <ReadOnlyProperty LongName="DataViewerVlongiVRot.specific_end_config" Type="0" SubType="512">true</ReadOnlyProperty>
     <Property LongName="DataViewerVlongiVRot.threaded" Type="0">true</Property>
     <Property LongName="DataViewerVlongiVRot.priority" Type="1">128</Property>
     <Property LongName="DataViewerVlongiVRot.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="Echantillonage" Model="PythonBridge" Version="3.0.3" x="168" y="1048" z="0">
+    <Output LongName="Echantillonage.points_traj" Name="points_traj">
+      <Property LongName="Echantillonage.points_traj.subsampling" Type="1">1</Property>
+      <Property LongName="Echantillonage.points_traj.fifosize" Type="1">16</Property>
+      <Property LongName="Echantillonage.points_traj.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="Echantillonage.guard_begin" Type="0" SubType="128">true</Property>
+    <Property LongName="Echantillonage.internalInputs" Type="3" SubType="128"><![CDATA[]]></Property>
+    <Property LongName="Echantillonage.internalOutputs" Type="3" SubType="128"><![CDATA[points_traj;11==;0]]></Property>
+    <Property LongName="Echantillonage.internalProperties" Type="3" SubType="128"><![CDATA[path||13||C:/Users/bolo.LAPTOP-0A1UK5DI/Documents/ESIG/S8/repo git/records/record1/TrajBouches||14#recording||23||0]]></Property>
+    <ReadOnlyProperty LongName="Echantillonage.advance_begin_configuration" Type="3" SubType="256"><![CDATA[Advanced Configuration]]></ReadOnlyProperty>
+    <Property LongName="Echantillonage.deathBehavior" Type="4"><![CDATA[3|1|WAIT FOR PROCESS INDEFINITELY|KILL PROCESS AFTER TIMEOUT (5sec)|START ANOTHER PROCESS]]></Property>
+    <Property LongName="Echantillonage.logDebug" Type="0">false</Property>
+    <Property LongName="Echantillonage.showTracebackInConsole" Type="0">true</Property>
+    <Property LongName="Echantillonage.autoReloadSubModules" Type="0">true</Property>
+    <Property LongName="Echantillonage.memorySize" Type="1">10000000</Property>
+    <ReadOnlyProperty LongName="Echantillonage.pythonPID" Type="1">5860</ReadOnlyProperty>
+    <Property LongName="Echantillonage.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
+    <ReadOnlyProperty LongName="Echantillonage.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Echantillonage.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
+    <Property LongName="Echantillonage.pythonInstallationFolder" Type="3" SubType="32"><![CDATA[AUTO/]]></Property>
+    <Property LongName="Echantillonage.pythonLogDirectory" Type="3" SubType="32"><![CDATA[C:/Users/bolo.LAPTOP-0A1UK5DI/RTMaps-4.0/python_log/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../../RTMaps-4.0/python_log]]></Relative></Property>
+    <Property LongName="Echantillonage.className" Type="3"><![CDATA[rtmaps_python]]></Property>
+    <Property LongName="Echantillonage.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/bolo.LAPTOP-0A1UK5DI/Documents/ESIG/S8/repo git/modules_python/echantillonage.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/modules_python/echantillonage.py]]></Relative></Property>
+    <Property LongName="Echantillonage.readingPolicy" Type="4"><![CDATA[4|3|Synchro|Reactive|Sampling|Triggered by First Input]]></Property>
+    <ReadOnlyProperty LongName="Echantillonage.prop_end_subsection_default_opened" Type="0" SubType="512">true</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Echantillonage.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
+    <Property LongName="Echantillonage.path" Type="3" SubType="16"><![CDATA[C:/Users/bolo.LAPTOP-0A1UK5DI/Documents/ESIG/S8/repo git/records/record1/TrajBouches]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/records/record1/TrajBouches]]></Relative></Property>
+    <Property LongName="Echantillonage.recording" Type="0">false</Property>
+    <ReadOnlyProperty LongName="Echantillonage.userSubsectionEnd" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="Echantillonage.threaded" Type="0">true</Property>
+    <Property LongName="Echantillonage.priority" Type="1">128</Property>
+    <Property LongName="Echantillonage.autoStart" Type="0">true</Property>
   </Component>
   <Component InstanceName="Get_VectorSizes_14" Model="Get_VectorSizes" Version="1.0.2" x="152" y="296" z="0">
     <Input LongName="Get_VectorSizes_14.input" Name="input">
@@ -299,8 +444,8 @@
     <Property LongName="GPS.moveable" Type="0">true</Property>
     <Property LongName="GPS.hidden" Type="0">false</Property>
     <Property LongName="GPS.title" Type="3"><![CDATA[GPS]]></Property>
-    <Property LongName="GPS.x" Type="1">1507</Property>
-    <Property LongName="GPS.y" Type="1">187</Property>
+    <Property LongName="GPS.x" Type="1">1454</Property>
+    <Property LongName="GPS.y" Type="1">282</Property>
     <Property LongName="GPS.width" Type="1">371</Property>
     <Property LongName="GPS.height" Type="1">553</Property>
     <Property LongName="GPS.end_guard" Type="0" SubType="128">true</Property>
@@ -323,7 +468,7 @@
     <Property LongName="GPS.unsignedInteger64Format" Type="3"><![CDATA[%I64u]]></Property>
     <Property LongName="GPS.hexDisplay" Type="0">false</Property>
     <Property LongName="GPS.internalState" Type="3" SubType="128"><![CDATA[100;261]]></Property>
-    <Property LongName="GPS.expandedState" Type="3" SubType="128"><![CDATA[1|SocketReceiver_3_5_3.posesIMU;0|Info:SocketReceiver_3_5_3.posesIMU;1|Data:SocketReceiver_3_5_3.posesIMU;1|SocketReceiver_3_5_3.eulerAngles;0|Info:SocketReceiver_3_5_3.eulerAngles;1|Data:SocketReceiver_3_5_3.eulerAngles;0|]]></Property>
+    <Property LongName="GPS.expandedState" Type="3" SubType="128"><![CDATA[0|;0|;0|]]></Property>
     <ReadOnlyProperty LongName="GPS.specific_end_config" Type="0" SubType="512">true</ReadOnlyProperty>
     <Property LongName="GPS.threaded" Type="0">true</Property>
     <Property LongName="GPS.priority" Type="1">128</Property>
@@ -349,8 +494,8 @@
       <Property LongName="ImageViewer_1.oWindowEvent.fifosize" Type="1">16</Property>
       <Property LongName="ImageViewer_1.oWindowEvent.periodic" Type="0">false</Property>
     </Output>
-    <Property LongName="ImageViewer_1.left" Type="1">976</Property>
-    <Property LongName="ImageViewer_1.top" Type="1">756</Property>
+    <Property LongName="ImageViewer_1.left" Type="1">914</Property>
+    <Property LongName="ImageViewer_1.top" Type="1">678</Property>
     <Property LongName="ImageViewer_1.width" Type="1">400</Property>
     <Property LongName="ImageViewer_1.height" Type="1">200</Property>
     <Property LongName="ImageViewer_1.autoResize" Type="0">false</Property>
@@ -436,7 +581,7 @@
       <Property LongName="Joystick_2.rgbButtons.periodic" Type="0">false</Property>
     </Output>
     <Property LongName="Joystick_2.deviceType" Type="4"><![CDATA[2|0|DirectInput|XInput]]></Property>
-    <Property LongName="Joystick_2.inputDevice" Type="4"><![CDATA[1|0|Controller (Xbox One For Windows)]]></Property>
+    <Property LongName="Joystick_2.inputDevice" Type="4"><![CDATA[1|-1|None]]></Property>
     <Property LongName="Joystick_2.notification_mode" Type="4"><![CDATA[2|0|Polling|Event based]]></Property>
     <Property LongName="Joystick_2.poll_once_at_init" Type="0">false</Property>
     <Property LongName="Joystick_2.polling_period" Type="1">30000</Property>
@@ -487,6 +632,44 @@
     <Property LongName="JPEGDecompress_15.priority" Type="1">128</Property>
     <Property LongName="JPEGDecompress_15.autoStart" Type="0">true</Property>
   </Component>
+  <Component InstanceName="Led_1" Model="Led" Version="3.0.3" x="1240" y="1064" z="0">
+    <Input LongName="Led_1.input0" Name="input0">
+      <Property LongName="Led_1.input0.readerType" Type="1">2</Property>
+      <Property LongName="Led_1.input0.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="Led_1.input1" Name="input1">
+      <Property LongName="Led_1.input1.readerType" Type="1">2</Property>
+      <Property LongName="Led_1.input1.subsampling" Type="1">1</Property>
+    </Input>
+    <Property LongName="Led_1.begin_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="Led_1.widget_begin_config" Type="3" SubType="256"><![CDATA[General Configuration]]></ReadOnlyProperty>
+    <Property LongName="Led_1.autoDirty" Type="0">true</Property>
+    <Property LongName="Led_1.run" Type="0">true</Property>
+    <Property LongName="Led_1.alwaysOnTop" Type="4"><![CDATA[4|0|Only at run time|Only at design time|No|Both at run time and design time]]></Property>
+    <Property LongName="Led_1.moveable" Type="0">true</Property>
+    <Property LongName="Led_1.hidden" Type="0">false</Property>
+    <Property LongName="Led_1.title" Type="3"><![CDATA[]]></Property>
+    <Property LongName="Led_1.x" Type="1">173</Property>
+    <Property LongName="Led_1.y" Type="1">334</Property>
+    <Property LongName="Led_1.width" Type="1">120</Property>
+    <Property LongName="Led_1.height" Type="1">70</Property>
+    <Property LongName="Led_1.end_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="Led_1.widget_end_config" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Led_1.vector_begin_config" Type="3" SubType="256"><![CDATA[Multiple Widgets Configuration]]></ReadOnlyProperty>
+    <Property LongName="Led_1.numberOfWidgets" Type="1">2</Property>
+    <Property LongName="Led_1.widgetLayout" Type="4"><![CDATA[2|0|Horizontal|Vertical]]></Property>
+    <Property LongName="Led_1.showAdditionalTitles" Type="0">false</Property>
+    <Property LongName="Led_1.guard_vector" Type="0" SubType="128">false</Property>
+    <ReadOnlyProperty LongName="Led_1.vector_end_config" Type="0" SubType="512">true</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Led_1.specific_begin_config" Type="3" SubType="256"><![CDATA[Specific Configuration]]></ReadOnlyProperty>
+    <Property LongName="Led_1.numberOfStates" Type="1">2</Property>
+    <Property LongName="Led_1.colorState0" Type="1" SubType="4">0</Property>
+    <Property LongName="Led_1.colorState1" Type="1" SubType="4">255</Property>
+    <ReadOnlyProperty LongName="Led_1.specific_end_config" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="Led_1.threaded" Type="0">true</Property>
+    <Property LongName="Led_1.priority" Type="1">128</Property>
+    <Property LongName="Led_1.autoStart" Type="0">true</Property>
+  </Component>
   <Component InstanceName="numbers_converter_12" Model="numbers_converter" Version="1.1.3" x="864" y="504" z="0">
     <Input LongName="numbers_converter_12.input" Name="input">
       <Property LongName="numbers_converter_12.input.readerType" Type="1">0</Property>
@@ -517,38 +700,34 @@
     <Property LongName="numbers_converter_12_13.priority" Type="1">128</Property>
     <Property LongName="numbers_converter_12_13.autoStart" Type="0">true</Property>
   </Component>
-  <Component InstanceName="obstacle" Model="simple_button" Version="1.0.2" x="896" y="1072" z="0">
-    <Output LongName="obstacle.clicked0" Name="clicked0">
-      <Property LongName="obstacle.clicked0.subsampling" Type="1">1</Property>
-      <Property LongName="obstacle.clicked0.fifosize" Type="1">16</Property>
-      <Property LongName="obstacle.clicked0.periodic" Type="0">false</Property>
+  <Component InstanceName="ObstacleReceiver" Model="SocketReceiver" Version="2.21.0" x="1000" y="1072" z="0">
+    <Output LongName="ObstacleReceiver.Obstacle1" Name="Obstacle1">
+      <Property LongName="ObstacleReceiver.Obstacle1.subsampling" Type="1">1</Property>
+      <Property LongName="ObstacleReceiver.Obstacle1.fifosize" Type="1">16</Property>
+      <Property LongName="ObstacleReceiver.Obstacle1.periodic" Type="0">false</Property>
     </Output>
-    <Property LongName="obstacle.begin_guard" Type="0" SubType="128">true</Property>
-    <ReadOnlyProperty LongName="obstacle.widget_begin_config" Type="3" SubType="256"><![CDATA[General Configuration]]></ReadOnlyProperty>
-    <Property LongName="obstacle.autoDirty" Type="0">true</Property>
-    <Property LongName="obstacle.run" Type="0">true</Property>
-    <Property LongName="obstacle.alwaysOnTop" Type="4"><![CDATA[4|0|Only at run time|Only at design time|No|Both at run time and design time]]></Property>
-    <Property LongName="obstacle.moveable" Type="0">true</Property>
-    <Property LongName="obstacle.hidden" Type="0">false</Property>
-    <Property LongName="obstacle.title" Type="3"><![CDATA[]]></Property>
-    <Property LongName="obstacle.x" Type="1">181</Property>
-    <Property LongName="obstacle.y" Type="1">323</Property>
-    <Property LongName="obstacle.width" Type="1">90</Property>
-    <Property LongName="obstacle.height" Type="1">60</Property>
-    <Property LongName="obstacle.end_guard" Type="0" SubType="128">true</Property>
-    <ReadOnlyProperty LongName="obstacle.widget_end_config" Type="0" SubType="512">false</ReadOnlyProperty>
-    <ReadOnlyProperty LongName="obstacle.vector_begin_config" Type="3" SubType="256"><![CDATA[Multiple Widgets Configuration]]></ReadOnlyProperty>
-    <Property LongName="obstacle.numberOfWidgets" Type="1">1</Property>
-    <Property LongName="obstacle.widgetLayout" Type="4"><![CDATA[2|0|Horizontal|Vertical]]></Property>
-    <Property LongName="obstacle.showAdditionalTitles" Type="0">false</Property>
-    <Property LongName="obstacle.guard_vector" Type="0" SubType="128">false</Property>
-    <ReadOnlyProperty LongName="obstacle.vector_end_config" Type="0" SubType="512">true</ReadOnlyProperty>
-    <ReadOnlyProperty LongName="obstacle.specific_begin_config" Type="3" SubType="256"><![CDATA[Specific Configuration]]></ReadOnlyProperty>
-    <Property LongName="obstacle.text0" Type="3"><![CDATA[obstacle]]></Property>
-    <ReadOnlyProperty LongName="obstacle.specific_end_config" Type="0" SubType="512">true</ReadOnlyProperty>
-    <Property LongName="obstacle.threaded" Type="0">true</Property>
-    <Property LongName="obstacle.priority" Type="1">128</Property>
-    <Property LongName="obstacle.autoStart" Type="0">true</Property>
+    <Output LongName="ObstacleReceiver.Obstacle2" Name="Obstacle2">
+      <Property LongName="ObstacleReceiver.Obstacle2.subsampling" Type="1">1</Property>
+      <Property LongName="ObstacleReceiver.Obstacle2.fifosize" Type="1">16</Property>
+      <Property LongName="ObstacleReceiver.Obstacle2.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="ObstacleReceiver.Type" Type="4"><![CDATA[3|0|TCP|UDP|Multicast]]></Property>
+    <Property LongName="ObstacleReceiver.Port" Type="1">12112</Property>
+    <Property LongName="ObstacleReceiver.listenIP" Type="3"><![CDATA[localhost]]></Property>
+    <Property LongName="ObstacleReceiver.Family" Type="4"><![CDATA[2|0|IPv4|IPv6]]></Property>
+    <ReadOnlyProperty LongName="ObstacleReceiver.senderIP" Type="3"><![CDATA[0.0.0.0]]></ReadOnlyProperty>
+    <Property LongName="ObstacleReceiver.ReuseAddr" Type="0">false</Property>
+    <Property LongName="ObstacleReceiver.nbOutputs" Type="1">2</Property>
+    <Property LongName="ObstacleReceiver.channelsOrder" Type="3"><![CDATA[]]></Property>
+    <Property LongName="ObstacleReceiver.Verbose" Type="0">false</Property>
+    <Property LongName="ObstacleReceiver.connectionStatusOutput" Type="0">false</Property>
+    <Property LongName="ObstacleReceiver.reconnectTimeout" Type="1" SubType="1">0</Property>
+    <Property LongName="ObstacleReceiver.createRetryPeriod" Type="1" SubType="1">1000000</Property>
+    <Property LongName="ObstacleReceiver.output_0_name" Type="3"><![CDATA[Obstacle1]]></Property>
+    <Property LongName="ObstacleReceiver.output_1_name" Type="3"><![CDATA[Obstacle2]]></Property>
+    <Property LongName="ObstacleReceiver.threaded" Type="0">true</Property>
+    <Property LongName="ObstacleReceiver.priority" Type="1">128</Property>
+    <Property LongName="ObstacleReceiver.autoStart" Type="0">true</Property>
   </Component>
   <Component InstanceName="Potentiometer_10" Model="Potentiometer" Version="2.0.4" x="672" y="504" z="0">
     <Output LongName="Potentiometer_10.output0" Name="output0">
@@ -636,83 +815,6 @@
     <Property LongName="Potentiometer_10_14.priority" Type="1">128</Property>
     <Property LongName="Potentiometer_10_14.autoStart" Type="0">true</Property>
   </Component>
-  <Component InstanceName="PythonBridge_1_1" Model="PythonBridge" Version="3.0.3" x="88" y="1040" z="0">
-    <Output LongName="PythonBridge_1_1.points_traj" Name="points_traj">
-      <Property LongName="PythonBridge_1_1.points_traj.subsampling" Type="1">1</Property>
-      <Property LongName="PythonBridge_1_1.points_traj.fifosize" Type="1">16</Property>
-      <Property LongName="PythonBridge_1_1.points_traj.periodic" Type="0">false</Property>
-    </Output>
-    <Property LongName="PythonBridge_1_1.guard_begin" Type="0" SubType="128">true</Property>
-    <Property LongName="PythonBridge_1_1.internalInputs" Type="3" SubType="128"><![CDATA[]]></Property>
-    <Property LongName="PythonBridge_1_1.internalOutputs" Type="3" SubType="128"><![CDATA[points_traj;0==;0]]></Property>
-    <Property LongName="PythonBridge_1_1.internalProperties" Type="3" SubType="128"><![CDATA[]]></Property>
-    <ReadOnlyProperty LongName="PythonBridge_1_1.advance_begin_configuration" Type="3" SubType="256"><![CDATA[Advanced Configuration]]></ReadOnlyProperty>
-    <Property LongName="PythonBridge_1_1.deathBehavior" Type="4"><![CDATA[3|1|WAIT FOR PROCESS INDEFINITELY|KILL PROCESS AFTER TIMEOUT (5sec)|START ANOTHER PROCESS]]></Property>
-    <Property LongName="PythonBridge_1_1.logDebug" Type="0">false</Property>
-    <Property LongName="PythonBridge_1_1.showTracebackInConsole" Type="0">true</Property>
-    <Property LongName="PythonBridge_1_1.autoReloadSubModules" Type="0">true</Property>
-    <Property LongName="PythonBridge_1_1.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="PythonBridge_1_1.pythonPID" Type="1">4376</ReadOnlyProperty>
-    <Property LongName="PythonBridge_1_1.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
-    <ReadOnlyProperty LongName="PythonBridge_1_1.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
-    <ReadOnlyProperty LongName="PythonBridge_1_1.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
-    <Property LongName="PythonBridge_1_1.pythonInstallationFolder" Type="3" SubType="32"><![CDATA[AUTO/]]></Property>
-    <Property LongName="PythonBridge_1_1.pythonLogDirectory" Type="3" SubType="32"><![CDATA[C:/Users/bolo.LAPTOP-0A1UK5DI/RTMaps-4.0/python_log/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../../RTMaps-4.0/python_log]]></Relative></Property>
-    <Property LongName="PythonBridge_1_1.className" Type="3"><![CDATA[rtmaps_python]]></Property>
-    <Property LongName="PythonBridge_1_1.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/bolo.LAPTOP-0A1UK5DI/Documents/ESIG/S8/repo git/modules_python/echantillonage.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/modules_python/echantillonage.py]]></Relative></Property>
-    <Property LongName="PythonBridge_1_1.readingPolicy" Type="4"><![CDATA[4|3|Synchro|Reactive|Sampling|Triggered by First Input]]></Property>
-    <ReadOnlyProperty LongName="PythonBridge_1_1.prop_end_subsection_default_opened" Type="0" SubType="512">true</ReadOnlyProperty>
-    <ReadOnlyProperty LongName="PythonBridge_1_1.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
-    <ReadOnlyProperty LongName="PythonBridge_1_1.userSubsectionEnd" Type="0" SubType="512">true</ReadOnlyProperty>
-    <Property LongName="PythonBridge_1_1.threaded" Type="0">true</Property>
-    <Property LongName="PythonBridge_1_1.priority" Type="1">128</Property>
-    <Property LongName="PythonBridge_1_1.autoStart" Type="0">true</Property>
-  </Component>
-  <Component InstanceName="PythonBridge_1_2" Model="PythonBridge" Version="3.0.3" x="1056" y="872" z="0">
-    <Input LongName="PythonBridge_1_2.angle_distance" Name="angle_distance">
-      <Property LongName="PythonBridge_1_2.angle_distance.readerType" Type="1">0</Property>
-      <Property LongName="PythonBridge_1_2.angle_distance.subsampling" Type="1">1</Property>
-    </Input>
-    <Input LongName="PythonBridge_1_2.isObstacle" Name="isObstacle">
-      <Property LongName="PythonBridge_1_2.isObstacle.readerType" Type="1">4</Property>
-      <Property LongName="PythonBridge_1_2.isObstacle.subsampling" Type="1">1</Property>
-    </Input>
-    <Output LongName="PythonBridge_1_2.vitesse_laterale" Name="vitesse_laterale">
-      <Property LongName="PythonBridge_1_2.vitesse_laterale.subsampling" Type="1">1</Property>
-      <Property LongName="PythonBridge_1_2.vitesse_laterale.fifosize" Type="1">16</Property>
-      <Property LongName="PythonBridge_1_2.vitesse_laterale.periodic" Type="0">false</Property>
-    </Output>
-    <Output LongName="PythonBridge_1_2.vitesse_longitudinale" Name="vitesse_longitudinale">
-      <Property LongName="PythonBridge_1_2.vitesse_longitudinale.subsampling" Type="1">1</Property>
-      <Property LongName="PythonBridge_1_2.vitesse_longitudinale.fifosize" Type="1">16</Property>
-      <Property LongName="PythonBridge_1_2.vitesse_longitudinale.periodic" Type="0">false</Property>
-    </Output>
-    <Property LongName="PythonBridge_1_2.guard_begin" Type="0" SubType="128">true</Property>
-    <Property LongName="PythonBridge_1_2.internalInputs" Type="3" SubType="128"><![CDATA[angle_distance;1==#isObstacle;1==]]></Property>
-    <Property LongName="PythonBridge_1_2.internalOutputs" Type="3" SubType="128"><![CDATA[vitesse_laterale;11==;0#vitesse_longitudinale;11==;0]]></Property>
-    <Property LongName="PythonBridge_1_2.internalProperties" Type="3" SubType="128"><![CDATA[]]></Property>
-    <ReadOnlyProperty LongName="PythonBridge_1_2.advance_begin_configuration" Type="3" SubType="256"><![CDATA[Advanced Configuration]]></ReadOnlyProperty>
-    <Property LongName="PythonBridge_1_2.deathBehavior" Type="4"><![CDATA[3|1|WAIT FOR PROCESS INDEFINITELY|KILL PROCESS AFTER TIMEOUT (5sec)|START ANOTHER PROCESS]]></Property>
-    <Property LongName="PythonBridge_1_2.logDebug" Type="0">false</Property>
-    <Property LongName="PythonBridge_1_2.showTracebackInConsole" Type="0">true</Property>
-    <Property LongName="PythonBridge_1_2.autoReloadSubModules" Type="0">true</Property>
-    <Property LongName="PythonBridge_1_2.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="PythonBridge_1_2.pythonPID" Type="1">15492</ReadOnlyProperty>
-    <Property LongName="PythonBridge_1_2.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
-    <ReadOnlyProperty LongName="PythonBridge_1_2.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
-    <ReadOnlyProperty LongName="PythonBridge_1_2.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
-    <Property LongName="PythonBridge_1_2.pythonInstallationFolder" Type="3" SubType="32"><![CDATA[AUTO/]]></Property>
-    <Property LongName="PythonBridge_1_2.pythonLogDirectory" Type="3" SubType="32"><![CDATA[C:/Users/bolo.LAPTOP-0A1UK5DI/RTMaps-4.0/python_log/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../../RTMaps-4.0/python_log]]></Relative></Property>
-    <Property LongName="PythonBridge_1_2.className" Type="3"><![CDATA[rtmaps_python]]></Property>
-    <Property LongName="PythonBridge_1_2.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/bolo.LAPTOP-0A1UK5DI/Documents/ESIG/S8/repo git/modules_python/conversion_vitesse.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/modules_python/conversion_vitesse.py]]></Relative></Property>
-    <Property LongName="PythonBridge_1_2.readingPolicy" Type="4"><![CDATA[4|3|Synchro|Reactive|Sampling|Triggered by First Input]]></Property>
-    <ReadOnlyProperty LongName="PythonBridge_1_2.prop_end_subsection_default_opened" Type="0" SubType="512">true</ReadOnlyProperty>
-    <ReadOnlyProperty LongName="PythonBridge_1_2.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
-    <ReadOnlyProperty LongName="PythonBridge_1_2.userSubsectionEnd" Type="0" SubType="512">true</ReadOnlyProperty>
-    <Property LongName="PythonBridge_1_2.threaded" Type="0">true</Property>
-    <Property LongName="PythonBridge_1_2.priority" Type="1">128</Property>
-    <Property LongName="PythonBridge_1_2.autoStart" Type="0">true</Property>
-  </Component>
   <Component InstanceName="RecFile_7" Model="RecFile" Version="2.16.0" x="312" y="760" z="0">
     <Input LongName="RecFile_7.SocketReceiver_3_5_3.posesIMU.input" Name="input">
       <Property LongName="RecFile_7.SocketReceiver_3_5_3.posesIMU.input.readerType" Type="1">0</Property>
@@ -750,7 +852,7 @@
       <Property LongName="RecFile_7.SocketReceiver_3_5_3.eulerAngles.threaded" Type="0">true</Property>
       <Property LongName="RecFile_7.SocketReceiver_3_5_3.eulerAngles.priority" Type="1">128</Property>
     </Input>
-    <Property LongName="RecFile_7.path" Type="3" SubType="32"><![CDATA[C:/Users/bolo.LAPTOP-0A1UK5DI/Documents/ESIG/S8/repo git/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%]]></Relative></Property>
+    <Property LongName="RecFile_7.path" Type="3" SubType="32"><![CDATA[C:/Users/bolo.LAPTOP-0A1UK5DI/Downloads/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../../Downloads]]></Relative></Property>
     <ReadOnlyProperty LongName="RecFile_7.recordPath" Type="3"><![CDATA[]]></ReadOnlyProperty>
     <Property LongName="RecFile_7.fastRecordPath" Type="3" SubType="32"><![CDATA[]]></Property>
     <Property LongName="RecFile_7.comments" Type="3"><![CDATA[]]></Property>
@@ -761,7 +863,7 @@
     <Property LongName="RecFile_7.record_to_subfolders" Type="0">false</Property>
     <Property LongName="RecFile_7.add_record_start_time_to_folder_and_file_names" Type="0">false</Property>
     <Property LongName="RecFile_7.allow_record_overwrite" Type="0">false</Property>
-    <ReadOnlyProperty LongName="RecFile_7.record_start_time" Type="3"><![CDATA[20210423_104759204000]]></ReadOnlyProperty>
+    <ReadOnlyProperty LongName="RecFile_7.record_start_time" Type="3"><![CDATA[]]></ReadOnlyProperty>
     <ReadOnlyProperty LongName="RecFile_7.triggered_record_methods" Type="3"><![CDATA[SocketReceiver_3_5_3.posesIMU SocketReceiver_3_5_3.eulerAngles]]></ReadOnlyProperty>
     <Property LongName="RecFile_7.threaded" Type="0">false</Property>
     <Property LongName="RecFile_7.priority" Type="1">128</Property>
@@ -900,7 +1002,7 @@
     <ReadOnlyProperty LongName="switch.vector_end_config" Type="0" SubType="512">true</ReadOnlyProperty>
     <ReadOnlyProperty LongName="switch.specific_begin_config" Type="3" SubType="256"><![CDATA[Specific Configuration]]></ReadOnlyProperty>
     <Property LongName="switch.text0" Type="3"><![CDATA[Push me!]]></Property>
-    <Property LongName="switch.currentState0" Type="1">0</Property>
+    <Property LongName="switch.currentState0" Type="1">1</Property>
     <ReadOnlyProperty LongName="switch.specific_end_config" Type="0" SubType="512">true</ReadOnlyProperty>
     <Property LongName="switch.threaded" Type="0">true</Property>
     <Property LongName="switch.priority" Type="1">128</Property>
@@ -925,7 +1027,7 @@
       <Property LongName="switcher_lat.output.periodic" Type="0">false</Property>
     </Output>
     <Property LongName="switcher_lat.nb_channels_in" Type="1">2</Property>
-    <Property LongName="switcher_lat.source_channel_index" Type="4"><![CDATA[2|0|input_1|input_2]]></Property>
+    <Property LongName="switcher_lat.source_channel_index" Type="4"><![CDATA[2|1|input_1|input_2]]></Property>
     <Property LongName="switcher_lat.at_switch" Type="4"><![CDATA[2|1|Wait for next sample on corresponding input|Emit available sample on corresponding input]]></Property>
     <Property LongName="switcher_lat.threaded" Type="0">true</Property>
     <Property LongName="switcher_lat.priority" Type="1">128</Property>
@@ -950,16 +1052,80 @@
       <Property LongName="switcher_long.output.periodic" Type="0">false</Property>
     </Output>
     <Property LongName="switcher_long.nb_channels_in" Type="1">2</Property>
-    <Property LongName="switcher_long.source_channel_index" Type="4"><![CDATA[2|0|input_1|input_2]]></Property>
+    <Property LongName="switcher_long.source_channel_index" Type="4"><![CDATA[2|1|input_1|input_2]]></Property>
     <Property LongName="switcher_long.at_switch" Type="4"><![CDATA[2|1|Wait for next sample on corresponding input|Emit available sample on corresponding input]]></Property>
     <Property LongName="switcher_long.threaded" Type="0">true</Property>
     <Property LongName="switcher_long.priority" Type="1">128</Property>
     <Property LongName="switcher_long.autoStart" Type="0">true</Property>
   </Component>
+  <Component InstanceName="TCP_Server" Model="SocketSender" Version="3.9.1" x="96" y="928" z="0">
+    <Input LongName="TCP_Server.GPSPosition" Name="GPSPosition">
+      <Property LongName="TCP_Server.GPSPosition.readerType" Type="1">0</Property>
+      <Property LongName="TCP_Server.GPSPosition.subsampling" Type="1">1</Property>
+    </Input>
+    <Property LongName="TCP_Server.Type" Type="4"><![CDATA[3|0|TCP|UDP|Multicast]]></Property>
+    <Property LongName="TCP_Server.Port" Type="1">12221</Property>
+    <Property LongName="TCP_Server.DestinationIP" Type="3"><![CDATA[localhost]]></Property>
+    <Property LongName="TCP_Server.Family" Type="4"><![CDATA[3|1|Auto|IPv4|IPv6]]></Property>
+    <Property LongName="TCP_Server.ConnectTimeout" Type="1">3000000</Property>
+    <Property LongName="TCP_Server.nbInputs" Type="1">1</Property>
+    <Property LongName="TCP_Server.SendTimestamps" Type="0">false</Property>
+    <Property LongName="TCP_Server.SendFrequency" Type="0">false</Property>
+    <Property LongName="TCP_Server.SendQuality" Type="0">false</Property>
+    <Property LongName="TCP_Server.SendMisc" Type="0">false</Property>
+    <Property LongName="TCP_Server.TOS" Type="4"><![CDATA[5|0|None|Low Delay|Throughput|Reliability|Low Cost]]></Property>
+    <Property LongName="TCP_Server.Verbose" Type="0">false</Property>
+    <Property LongName="TCP_Server.input_0_name" Type="3"><![CDATA[GPSPosition]]></Property>
+    <Property LongName="TCP_Server.NbConnectionAttempts" Type="1">0</Property>
+    <Property LongName="TCP_Server.TcpNoDelay" Type="0">true</Property>
+    <Property LongName="TCP_Server.KeepalivePeriod" Type="1">0</Property>
+    <Property LongName="TCP_Server.threaded" Type="0">true</Property>
+    <Property LongName="TCP_Server.priority" Type="1">128</Property>
+    <Property LongName="TCP_Server.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="TCPClient_1_1" Model="TCPClient" Version="2.0.4" x="688" y="1200" z="0">
+    <Input LongName="TCPClient_1_1.input" Name="input">
+      <Property LongName="TCPClient_1_1.input.readerType" Type="1">0</Property>
+      <Property LongName="TCPClient_1_1.input.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="TCPClient_1_1.output" Name="output">
+      <Property LongName="TCPClient_1_1.output.subsampling" Type="1">1</Property>
+      <Property LongName="TCPClient_1_1.output.fifosize" Type="1">16</Property>
+      <Property LongName="TCPClient_1_1.output.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="TCPClient_1_1.Port" Type="1">12221</Property>
+    <Property LongName="TCPClient_1_1.DestinationIP" Type="3"><![CDATA[127.0.0.1]]></Property>
+    <Property LongName="TCPClient_1_1.ConnectTimeout" Type="1">3000000</Property>
+    <Property LongName="TCPClient_1_1.NbConnectionAttempts" Type="1">0</Property>
+    <Property LongName="TCPClient_1_1.EnableSend" Type="0">true</Property>
+    <Property LongName="TCPClient_1_1.EnableRecv" Type="0">true</Property>
+    <Property LongName="TCPClient_1_1.RecvTimeout" Type="1">10000</Property>
+    <Property LongName="TCPClient_1_1.RecvMaxMsgSize" Type="1">65507</Property>
+    <Property LongName="TCPClient_1_1.TcpNoDelay" Type="0">true</Property>
+    <Property LongName="TCPClient_1_1.Verbose" Type="0">false</Property>
+    <Property LongName="TCPClient_1_1.threaded" Type="0">true</Property>
+    <Property LongName="TCPClient_1_1.priority" Type="1">128</Property>
+    <Property LongName="TCPClient_1_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="Text2Stream_1_1" Model="Text2Stream" Version="1.2.2" x="496" y="1200" z="0">
+    <Input LongName="Text2Stream_1_1.inputAscii" Name="inputAscii">
+      <Property LongName="Text2Stream_1_1.inputAscii.readerType" Type="1">0</Property>
+      <Property LongName="Text2Stream_1_1.inputAscii.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="Text2Stream_1_1.outputStream8" Name="outputStream8">
+      <Property LongName="Text2Stream_1_1.outputStream8.subsampling" Type="1">1</Property>
+      <Property LongName="Text2Stream_1_1.outputStream8.fifosize" Type="1">16</Property>
+      <Property LongName="Text2Stream_1_1.outputStream8.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="Text2Stream_1_1.removeEndOfStringChar" Type="0">false</Property>
+    <Property LongName="Text2Stream_1_1.threaded" Type="0">false</Property>
+    <Property LongName="Text2Stream_1_1.priority" Type="1">128</Property>
+    <Property LongName="Text2Stream_1_1.autoStart" Type="0">true</Property>
+  </Component>
   <Component InstanceName="toUTM" Model="PythonBridge" Version="3.0.3" x="224" y="928" z="0">
-    <Input LongName="toUTM.long_lat" Name="long_lat">
-      <Property LongName="toUTM.long_lat.readerType" Type="1">0</Property>
-      <Property LongName="toUTM.long_lat.subsampling" Type="1">1</Property>
+    <Input LongName="toUTM.lat_long" Name="lat_long">
+      <Property LongName="toUTM.lat_long.readerType" Type="1">0</Property>
+      <Property LongName="toUTM.lat_long.subsampling" Type="1">1</Property>
     </Input>
     <Output LongName="toUTM.UTM" Name="UTM">
       <Property LongName="toUTM.UTM.subsampling" Type="1">1</Property>
@@ -967,16 +1133,16 @@
       <Property LongName="toUTM.UTM.periodic" Type="0">false</Property>
     </Output>
     <Property LongName="toUTM.guard_begin" Type="0" SubType="128">true</Property>
-    <Property LongName="toUTM.internalInputs" Type="3" SubType="128"><![CDATA[long_lat;1==]]></Property>
-    <Property LongName="toUTM.internalOutputs" Type="3" SubType="128"><![CDATA[UTM;0==;0]]></Property>
-    <Property LongName="toUTM.internalProperties" Type="3" SubType="128"><![CDATA[]]></Property>
+    <Property LongName="toUTM.internalInputs" Type="3" SubType="128"><![CDATA[lat_long;1==]]></Property>
+    <Property LongName="toUTM.internalOutputs" Type="3" SubType="128"><![CDATA[UTM;11==;0]]></Property>
+    <Property LongName="toUTM.internalProperties" Type="3" SubType="128"><![CDATA[record_path||13||C:/Users/bolo.LAPTOP-0A1UK5DI/Documents/ESIG/S8/repo git/records/record1/GPSTrajectory1.csv||14#recording||23||1]]></Property>
     <ReadOnlyProperty LongName="toUTM.advance_begin_configuration" Type="3" SubType="256"><![CDATA[Advanced Configuration]]></ReadOnlyProperty>
     <Property LongName="toUTM.deathBehavior" Type="4"><![CDATA[3|1|WAIT FOR PROCESS INDEFINITELY|KILL PROCESS AFTER TIMEOUT (5sec)|START ANOTHER PROCESS]]></Property>
     <Property LongName="toUTM.logDebug" Type="0">false</Property>
     <Property LongName="toUTM.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="toUTM.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="toUTM.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="toUTM.pythonPID" Type="1">6736</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="toUTM.pythonPID" Type="1">12952</ReadOnlyProperty>
     <Property LongName="toUTM.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="toUTM.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="toUTM.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
@@ -987,46 +1153,50 @@
     <Property LongName="toUTM.readingPolicy" Type="4"><![CDATA[4|3|Synchro|Reactive|Sampling|Triggered by First Input]]></Property>
     <ReadOnlyProperty LongName="toUTM.prop_end_subsection_default_opened" Type="0" SubType="512">true</ReadOnlyProperty>
     <ReadOnlyProperty LongName="toUTM.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
+    <Property LongName="toUTM.record_path" Type="3" SubType="16"><![CDATA[C:/Users/bolo.LAPTOP-0A1UK5DI/Documents/ESIG/S8/repo git/records/record1/GPSTrajectory1.csv]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/records/record1/GPSTrajectory1.csv]]></Relative></Property>
+    <Property LongName="toUTM.recording" Type="0">true</Property>
     <ReadOnlyProperty LongName="toUTM.userSubsectionEnd" Type="0" SubType="512">true</ReadOnlyProperty>
     <Property LongName="toUTM.threaded" Type="0">true</Property>
     <Property LongName="toUTM.priority" Type="1">128</Property>
     <Property LongName="toUTM.autoStart" Type="0">true</Property>
   </Component>
-  <Component InstanceName="toUTM_1" Model="PythonBridge" Version="3.0.3" x="280" y="1040" z="0">
-    <Input LongName="toUTM_1.long_lat" Name="long_lat">
-      <Property LongName="toUTM_1.long_lat.readerType" Type="1">0</Property>
-      <Property LongName="toUTM_1.long_lat.subsampling" Type="1">1</Property>
+  <Component InstanceName="toUTM1" Model="PythonBridge" Version="3.0.3" x="360" y="1048" z="0">
+    <Input LongName="toUTM1.lat_long" Name="lat_long">
+      <Property LongName="toUTM1.lat_long.readerType" Type="1">0</Property>
+      <Property LongName="toUTM1.lat_long.subsampling" Type="1">1</Property>
     </Input>
-    <Output LongName="toUTM_1.UTM" Name="UTM">
-      <Property LongName="toUTM_1.UTM.subsampling" Type="1">1</Property>
-      <Property LongName="toUTM_1.UTM.fifosize" Type="1">16</Property>
-      <Property LongName="toUTM_1.UTM.periodic" Type="0">false</Property>
+    <Output LongName="toUTM1.UTM" Name="UTM">
+      <Property LongName="toUTM1.UTM.subsampling" Type="1">1</Property>
+      <Property LongName="toUTM1.UTM.fifosize" Type="1">16</Property>
+      <Property LongName="toUTM1.UTM.periodic" Type="0">false</Property>
     </Output>
-    <Property LongName="toUTM_1.guard_begin" Type="0" SubType="128">true</Property>
-    <Property LongName="toUTM_1.internalInputs" Type="3" SubType="128"><![CDATA[long_lat;1==]]></Property>
-    <Property LongName="toUTM_1.internalOutputs" Type="3" SubType="128"><![CDATA[UTM;0==;0]]></Property>
-    <Property LongName="toUTM_1.internalProperties" Type="3" SubType="128"><![CDATA[]]></Property>
-    <ReadOnlyProperty LongName="toUTM_1.advance_begin_configuration" Type="3" SubType="256"><![CDATA[Advanced Configuration]]></ReadOnlyProperty>
-    <Property LongName="toUTM_1.deathBehavior" Type="4"><![CDATA[3|1|WAIT FOR PROCESS INDEFINITELY|KILL PROCESS AFTER TIMEOUT (5sec)|START ANOTHER PROCESS]]></Property>
-    <Property LongName="toUTM_1.logDebug" Type="0">false</Property>
-    <Property LongName="toUTM_1.showTracebackInConsole" Type="0">true</Property>
-    <Property LongName="toUTM_1.autoReloadSubModules" Type="0">true</Property>
-    <Property LongName="toUTM_1.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="toUTM_1.pythonPID" Type="1">17584</ReadOnlyProperty>
-    <Property LongName="toUTM_1.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
-    <ReadOnlyProperty LongName="toUTM_1.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
-    <ReadOnlyProperty LongName="toUTM_1.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
-    <Property LongName="toUTM_1.pythonInstallationFolder" Type="3" SubType="32"><![CDATA[AUTO/]]></Property>
-    <Property LongName="toUTM_1.pythonLogDirectory" Type="3" SubType="32"><![CDATA[C:/Users/bolo.LAPTOP-0A1UK5DI/RTMaps-4.0/python_log/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../../RTMaps-4.0/python_log]]></Relative></Property>
-    <Property LongName="toUTM_1.className" Type="3"><![CDATA[rtmaps_python]]></Property>
-    <Property LongName="toUTM_1.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/bolo.LAPTOP-0A1UK5DI/Documents/ESIG/S8/repo git/modules_python/toUTM.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/modules_python/toUTM.py]]></Relative></Property>
-    <Property LongName="toUTM_1.readingPolicy" Type="4"><![CDATA[4|3|Synchro|Reactive|Sampling|Triggered by First Input]]></Property>
-    <ReadOnlyProperty LongName="toUTM_1.prop_end_subsection_default_opened" Type="0" SubType="512">true</ReadOnlyProperty>
-    <ReadOnlyProperty LongName="toUTM_1.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
-    <ReadOnlyProperty LongName="toUTM_1.userSubsectionEnd" Type="0" SubType="512">true</ReadOnlyProperty>
-    <Property LongName="toUTM_1.threaded" Type="0">true</Property>
-    <Property LongName="toUTM_1.priority" Type="1">128</Property>
-    <Property LongName="toUTM_1.autoStart" Type="0">true</Property>
+    <Property LongName="toUTM1.guard_begin" Type="0" SubType="128">true</Property>
+    <Property LongName="toUTM1.internalInputs" Type="3" SubType="128"><![CDATA[lat_long;1==]]></Property>
+    <Property LongName="toUTM1.internalOutputs" Type="3" SubType="128"><![CDATA[UTM;11==;0]]></Property>
+    <Property LongName="toUTM1.internalProperties" Type="3" SubType="128"><![CDATA[record_path||13||C:/Users/bolo.LAPTOP-0A1UK5DI/Documents/ESIG/S8/repo git/records/record1/outputEchantillonage1.csv||14#recording||23||1]]></Property>
+    <ReadOnlyProperty LongName="toUTM1.advance_begin_configuration" Type="3" SubType="256"><![CDATA[Advanced Configuration]]></ReadOnlyProperty>
+    <Property LongName="toUTM1.deathBehavior" Type="4"><![CDATA[3|1|WAIT FOR PROCESS INDEFINITELY|KILL PROCESS AFTER TIMEOUT (5sec)|START ANOTHER PROCESS]]></Property>
+    <Property LongName="toUTM1.logDebug" Type="0">false</Property>
+    <Property LongName="toUTM1.showTracebackInConsole" Type="0">true</Property>
+    <Property LongName="toUTM1.autoReloadSubModules" Type="0">true</Property>
+    <Property LongName="toUTM1.memorySize" Type="1">10000000</Property>
+    <ReadOnlyProperty LongName="toUTM1.pythonPID" Type="1">8812</ReadOnlyProperty>
+    <Property LongName="toUTM1.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
+    <ReadOnlyProperty LongName="toUTM1.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="toUTM1.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
+    <Property LongName="toUTM1.pythonInstallationFolder" Type="3" SubType="32"><![CDATA[AUTO/]]></Property>
+    <Property LongName="toUTM1.pythonLogDirectory" Type="3" SubType="32"><![CDATA[C:/Users/bolo.LAPTOP-0A1UK5DI/RTMaps-4.0/python_log/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../../RTMaps-4.0/python_log]]></Relative></Property>
+    <Property LongName="toUTM1.className" Type="3"><![CDATA[rtmaps_python]]></Property>
+    <Property LongName="toUTM1.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/bolo.LAPTOP-0A1UK5DI/Documents/ESIG/S8/repo git/modules_python/toUTM.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/modules_python/toUTM.py]]></Relative></Property>
+    <Property LongName="toUTM1.readingPolicy" Type="4"><![CDATA[4|3|Synchro|Reactive|Sampling|Triggered by First Input]]></Property>
+    <ReadOnlyProperty LongName="toUTM1.prop_end_subsection_default_opened" Type="0" SubType="512">true</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="toUTM1.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
+    <Property LongName="toUTM1.record_path" Type="3" SubType="16"><![CDATA[C:/Users/bolo.LAPTOP-0A1UK5DI/Documents/ESIG/S8/repo git/records/record1/outputEchantillonage1.csv]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/records/record1/outputEchantillonage1.csv]]></Relative></Property>
+    <Property LongName="toUTM1.recording" Type="0">true</Property>
+    <ReadOnlyProperty LongName="toUTM1.userSubsectionEnd" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="toUTM1.threaded" Type="0">true</Property>
+    <Property LongName="toUTM1.priority" Type="1">128</Property>
+    <Property LongName="toUTM1.autoStart" Type="0">true</Property>
   </Component>
   <Component InstanceName="Vectorizer_1" Model="Vectorizer" Version="4.0.2" x="360" y="928" z="0">
     <Input LongName="Vectorizer_1.input1" Name="input1">
@@ -1098,6 +1268,42 @@
     <Property LongName="Vectorizer_1_1.priority" Type="1">128</Property>
     <Property LongName="Vectorizer_1_1.autoStart" Type="0">true</Property>
   </Component>
+  <Component InstanceName="Vectorizer_3_1" Model="Vectorizer" Version="4.0.2" x="96" y="1200" z="0">
+    <Input LongName="Vectorizer_3_1.input1" Name="input1">
+      <Property LongName="Vectorizer_3_1.input1.readerType" Type="1">4</Property>
+      <Property LongName="Vectorizer_3_1.input1.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="Vectorizer_3_1.input2" Name="input2">
+      <Property LongName="Vectorizer_3_1.input2.readerType" Type="1">4</Property>
+      <Property LongName="Vectorizer_3_1.input2.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="Vectorizer_3_1.outputFloat" Name="outputFloat">
+      <Property LongName="Vectorizer_3_1.outputFloat.subsampling" Type="1">1</Property>
+      <Property LongName="Vectorizer_3_1.outputFloat.fifosize" Type="1">16</Property>
+      <Property LongName="Vectorizer_3_1.outputFloat.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Vectorizer_3_1.outputInteger" Name="outputInteger">
+      <Property LongName="Vectorizer_3_1.outputInteger.subsampling" Type="1">1</Property>
+      <Property LongName="Vectorizer_3_1.outputInteger.fifosize" Type="1">16</Property>
+      <Property LongName="Vectorizer_3_1.outputInteger.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Vectorizer_3_1.outputInteger64" Name="outputInteger64">
+      <Property LongName="Vectorizer_3_1.outputInteger64.subsampling" Type="1">1</Property>
+      <Property LongName="Vectorizer_3_1.outputInteger64.fifosize" Type="1">16</Property>
+      <Property LongName="Vectorizer_3_1.outputInteger64.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Vectorizer_3_1.outputFloat32" Name="outputFloat32">
+      <Property LongName="Vectorizer_3_1.outputFloat32.subsampling" Type="1">1</Property>
+      <Property LongName="Vectorizer_3_1.outputFloat32.fifosize" Type="1">16</Property>
+      <Property LongName="Vectorizer_3_1.outputFloat32.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="Vectorizer_3_1.nbInputs" Type="1">2</Property>
+    <Property LongName="Vectorizer_3_1.samplingMode" Type="4"><![CDATA[6|1|Synchronized|Periodic resampling|Asynchronous arrival on any of the inputs|Triggered by first input|Wait for at least 1 arrival on each input|Periodic resampling while post-processing]]></Property>
+    <Property LongName="Vectorizer_3_1.samplingPeriod" Type="1">50000</Property>
+    <Property LongName="Vectorizer_3_1.threaded" Type="0">true</Property>
+    <Property LongName="Vectorizer_3_1.priority" Type="1">128</Property>
+    <Property LongName="Vectorizer_3_1.autoStart" Type="0">true</Property>
+  </Component>
   <Component InstanceName="viewverXY" Model="DataViewer" Version="2.0.3" x="672" y="856" z="0">
     <Input LongName="viewverXY.input_0" Name="input_0">
       <Property LongName="viewverXY.input_0.readerType" Type="1">2</Property>
@@ -1107,6 +1313,10 @@
       <Property LongName="viewverXY.input_1.readerType" Type="1">2</Property>
       <Property LongName="viewverXY.input_1.subsampling" Type="1">1</Property>
     </Input>
+    <Input LongName="viewverXY.input_2" Name="input_2">
+      <Property LongName="viewverXY.input_2.readerType" Type="1">2</Property>
+      <Property LongName="viewverXY.input_2.subsampling" Type="1">1</Property>
+    </Input>
     <Property LongName="viewverXY.begin_guard" Type="0" SubType="128">true</Property>
     <ReadOnlyProperty LongName="viewverXY.widget_begin_config" Type="3" SubType="256"><![CDATA[General Configuration]]></ReadOnlyProperty>
     <Property LongName="viewverXY.autoDirty" Type="0">true</Property>
@@ -1115,14 +1325,14 @@
     <Property LongName="viewverXY.moveable" Type="0">true</Property>
     <Property LongName="viewverXY.hidden" Type="0">false</Property>
     <Property LongName="viewverXY.title" Type="3"><![CDATA[]]></Property>
-    <Property LongName="viewverXY.x" Type="1">399</Property>
-    <Property LongName="viewverXY.y" Type="1">195</Property>
-    <Property LongName="viewverXY.width" Type="1">315</Property>
-    <Property LongName="viewverXY.height" Type="1">240</Property>
+    <Property LongName="viewverXY.x" Type="1">950</Property>
+    <Property LongName="viewverXY.y" Type="1">342</Property>
+    <Property LongName="viewverXY.width" Type="1">345</Property>
+    <Property LongName="viewverXY.height" Type="1">435</Property>
     <Property LongName="viewverXY.end_guard" Type="0" SubType="128">true</Property>
     <ReadOnlyProperty LongName="viewverXY.widget_end_config" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="viewverXY.specific_begin_config" Type="3" SubType="256"><![CDATA[Specific Configuration]]></ReadOnlyProperty>
-    <Property LongName="viewverXY.nbInputs" Type="1">2</Property>
+    <Property LongName="viewverXY.nbInputs" Type="1">3</Property>
     <Property LongName="viewverXY.compactMode" Type="0">false</Property>
     <Property LongName="viewverXY.showInfo" Type="0">true</Property>
     <Property LongName="viewverXY.showData" Type="0">true</Property>
@@ -1138,8 +1348,8 @@
     <Property LongName="viewverXY.unsignedInteger32Format" Type="3"><![CDATA[%I32u]]></Property>
     <Property LongName="viewverXY.unsignedInteger64Format" Type="3"><![CDATA[%I64u]]></Property>
     <Property LongName="viewverXY.hexDisplay" Type="0">false</Property>
-    <Property LongName="viewverXY.internalState" Type="3" SubType="128"><![CDATA[100;205]]></Property>
-    <Property LongName="viewverXY.expandedState" Type="3" SubType="128"><![CDATA[1|changement_repere.x_y;0|Info:changement_repere.x_y;1|Data:changement_repere.x_y;0|]]></Property>
+    <Property LongName="viewverXY.internalState" Type="3" SubType="128"><![CDATA[100;235]]></Property>
+    <Property LongName="viewverXY.expandedState" Type="3" SubType="128"><![CDATA[0|;0|;0|]]></Property>
     <ReadOnlyProperty LongName="viewverXY.specific_end_config" Type="0" SubType="512">true</ReadOnlyProperty>
     <Property LongName="viewverXY.threaded" Type="0">true</Property>
     <Property LongName="viewverXY.priority" Type="1">128</Property>
@@ -1398,11 +1608,15 @@
     <Property LongName="Vlongslider.autoStart" Type="0">true</Property>
   </Component>
   <Connection Output="changement_repere.x_y" Input="angle_erreur.x_y"/>
+  <Connection Output="angle_erreur.angle_erreur" Input="angleErreur.input_0"/>
   <Connection Output="vLong_Slider.output" Input="Calc_8.input"/>
   <Connection Output="Vlat.output" Input="Calc_9.input"/>
   <Connection Output="SocketReceiver_3_5.cameraView" Input="CAMERA_V.input"/>
   <Connection Output="Vectorizer_1.outputFloat" Input="changement_repere.donnees"/>
-  <Connection Output="toUTM_1.UTM" Input="changement_repere.donnees_Traj"/>
+  <Connection Output="toUTM1.UTM" Input="changement_repere.donnees_Traj"/>
+  <Connection Output="Vectorizer_3_1.outputFloat" Input="Conv2Text_1_1.input"/>
+  <Connection Output="Vectorizer_1_1.outputFloat" Input="convertion_vitesse.angle_distance"/>
+  <Connection Output="ObstacleReceiver.Obstacle1" Input="convertion_vitesse.isObstacle"/>
   <Connection Output="switcher_long.output" Input="DataViewerVlongiVRot.input_0"/>
   <Connection Output="switcher_lat.output" Input="DataViewerVlongiVRot.input_1"/>
   <Connection Output="Joystick_2.rgbButtons" Input="Get_VectorSizes_14.input"/>
@@ -1411,25 +1625,32 @@
   <Connection Output="JPEGDecompress_15.output" Input="ImageViewer_1.input"/>
   <Connection Output="Joystick_2.xyzAxisPosition" Input="Jostik.input_0"/>
   <Connection Output="SocketReceiver_2.output0" Input="JPEGDecompress_15.input"/>
+  <Connection Output="ObstacleReceiver.Obstacle1" Input="Led_1.input0"/>
+  <Connection Output="ObstacleReceiver.Obstacle2" Input="Led_1.input1"/>
   <Connection Output="Potentiometer_10.output0" Input="numbers_converter_12.input"/>
   <Connection Output="Potentiometer_10_14.output0" Input="numbers_converter_12_13.input"/>
-  <Connection Output="Vectorizer_1_1.outputFloat" Input="PythonBridge_1_2.angle_distance"/>
-  <Connection Output="obstacle.clicked0" Input="PythonBridge_1_2.isObstacle"/>
   <Connection Output="switcher_long.output" Input="SocketSender_2.Vlong"/>
   <Connection Output="switcher_lat.output" Input="SocketSender_2.Vlat"/>
   <Connection Output="Calc_9.outputFloat" Input="switcher_lat.input_1"/>
-  <Connection Output="PythonBridge_1_2.vitesse_laterale" Input="switcher_lat.input_2"/>
+  <Connection Output="convertion_vitesse.vitesse_laterale" Input="switcher_lat.input_2"/>
   <Connection Output="switch.state0" Input="switcher_lat.index"/>
   <Connection Output="Calc_8.outputFloat" Input="switcher_long.input_1"/>
-  <Connection Output="PythonBridge_1_2.vitesse_longitudinale" Input="switcher_long.input_2"/>
+  <Connection Output="convertion_vitesse.vitesse_longitudinale" Input="switcher_long.input_2"/>
   <Connection Output="switch.state0" Input="switcher_long.index"/>
-  <Connection Output="SocketReceiver_3_5_3.posesIMU" Input="toUTM.long_lat"/>
-  <Connection Output="PythonBridge_1_1.points_traj" Input="toUTM_1.long_lat"/>
+  <Connection Output="SocketReceiver_3_5_3.posesIMU" Input="TCP_Server.GPSPosition"/>
+  <Connection Output="Text2Stream_1_1.outputStream8" Input="TCPClient_1_1.input"/>
+  <Connection Output="Conv2Text_1_1.output" Input="Text2Stream_1_1.inputAscii"/>
+  <Connection Output="SocketReceiver_3_5_3.posesIMU" Input="toUTM.lat_long"/>
+  <Connection Output="Echantillonage.points_traj" Input="toUTM1.lat_long"/>
   <Connection Output="toUTM.UTM" Input="Vectorizer_1.input1"/>
   <Connection Output="SocketReceiver_3_5_3.eulerAngles" Input="Vectorizer_1.input2"/>
   <Connection Output="angle_erreur.angle_erreur" Input="Vectorizer_1_1.input1"/>
   <Connection Output="angle_erreur.distancePoint" Input="Vectorizer_1_1.input2"/>
+  <Connection Output="SocketReceiver_3_5_3.posesIMU" Input="Vectorizer_3_1.input1"/>
+  <Connection Output="SocketReceiver_3_5_3.eulerAngles" Input="Vectorizer_3_1.input2"/>
   <Connection Output="changement_repere.x_y" Input="viewverXY.input_0"/>
+  <Connection Output="Vectorizer_1_1.outputFloat" Input="viewverXY.input_1"/>
+  <Connection Output="SocketReceiver_3_5_3.eulerAngles" Input="viewverXY.input_2"/>
   <Connection Output="Get_VectorSizes_14.vectorsize" Input="Vlat.size"/>
   <Connection Output="Joystick_2.rgbButtons" Input="Vlat.hommeMort"/>
   <Connection Output="Vlong_17.outputFloat" Input="Vlat.Vlat"/>
@@ -1459,6 +1680,9 @@
       <Description/>
     </ComponentBox>
     <ComponentBox InstanceName="CAMERA_V" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ComponentBox InstanceName="Conv2Text_1_1" reversed="false">
       <Description/>
     </ComponentBox>
     <ComponentBox InstanceName="DataViewerVlongiVRot" reversed="false">
@@ -1497,6 +1721,9 @@
     <ComponentBox InstanceName="PythonBridge_1_1" reversed="false">
       <Description/>
     </ComponentBox>
+    <ComponentBox InstanceName="PythonBridge_1_1_1" reversed="false">
+      <Description/>
+    </ComponentBox>
     <ComponentBox InstanceName="PythonBridge_1_2" reversed="false">
       <Description/>
     </ComponentBox>
@@ -1512,7 +1739,13 @@
     <ComponentBox InstanceName="SocketReceiver_3_5_3" reversed="false">
       <Description/>
     </ComponentBox>
+    <ComponentBox InstanceName="SocketReceiver_3_5_3_1" reversed="false">
+      <Description/>
+    </ComponentBox>
     <ComponentBox InstanceName="SocketSender_2" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ComponentBox InstanceName="SocketSender_2_1" reversed="false">
       <Description/>
     </ComponentBox>
     <ComponentBox InstanceName="switcher_lat" reversed="false">
@@ -1521,7 +1754,19 @@
     <ComponentBox InstanceName="switcher_long" reversed="false">
       <Description/>
     </ComponentBox>
+    <ComponentBox InstanceName="TCPClient_1_1" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ComponentBox InstanceName="Text2Stream_1_1" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ComponentBox InstanceName="toUTM1_1" reversed="false">
+      <Description/>
+    </ComponentBox>
     <ComponentBox InstanceName="Vectorizer_1_1" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ComponentBox InstanceName="Vectorizer_3_1" reversed="false">
       <Description/>
     </ComponentBox>
     <ComponentBox InstanceName="Vlat" reversed="false">
@@ -1553,12 +1798,27 @@
     <CommentBox x="46" y="869" z="-1" w="965" h="272" align="2" bgcolor="ff0000" fgcolor="0">Auto&#13;
 </CommentBox>
     <ConnectionShape InstanceName="angle_erreur.x_y" color="0"/>
+    <ConnectionShape InstanceName="angleErreur.input_0" color="0"/>
+    <ConnectionShape InstanceName="angleErreur.input_1" color="0"/>
     <ConnectionShape InstanceName="Calc_8.input" color="0"/>
     <ConnectionShape InstanceName="Calc_9.input" color="0"/>
     <ConnectionShape InstanceName="CAMERA_V.input" color="0"/>
     <ConnectionShape InstanceName="changement_repere.donnees" color="0"/>
     <ConnectionShape InstanceName="changement_repere.donnees_Traj" color="0"/>
     <ConnectionShape InstanceName="changement_repere.UTM_vehicule" color="0"/>
+    <ConnectionShape InstanceName="Conv2Text_1.input" color="0"/>
+    <ConnectionShape InstanceName="Conv2Text_1_1.input" color="0"/>
+    <ConnectionShape InstanceName="convertion_vitesse.angle_distance" color="0"/>
+    <ConnectionShape InstanceName="convertion_vitesse.isObstacle" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_1.input_0" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_1.input_1" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_1.input_2" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_2.input_0" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_2.input_1" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_2.input_2" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_2_1.input_0" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_3.input_0" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_3.input_1" color="0"/>
     <ConnectionShape InstanceName="DataViewer_x_y.input_0" color="0"/>
     <ConnectionShape InstanceName="DataViewerVlongiVRot.input_0" color="0"/>
     <ConnectionShape InstanceName="DataViewerVlongiVRot.input_1" color="0"/>
@@ -1572,10 +1832,14 @@
     <ConnectionShape InstanceName="input.input_1" color="0"/>
     <ConnectionShape InstanceName="Jostik.input_0" color="0"/>
     <ConnectionShape InstanceName="JPEGDecompress_15.input" color="0"/>
+    <ConnectionShape InstanceName="Led_1.input0" color="0"/>
+    <ConnectionShape InstanceName="Led_1.input1" color="0"/>
     <ConnectionShape InstanceName="numbers_converter_12.input" color="0"/>
     <ConnectionShape InstanceName="numbers_converter_12_13.input" color="0"/>
+    <ConnectionShape InstanceName="numbers_converter_1_1.input" color="0"/>
     <ConnectionShape InstanceName="output.input_0" color="0"/>
     <ConnectionShape InstanceName="output.input_1" color="0"/>
+    <ConnectionShape InstanceName="PythonBridge_1.lat_long" color="0"/>
     <ConnectionShape InstanceName="PythonBridge_1_2.angle_distance" color="0"/>
     <ConnectionShape InstanceName="PythonBridge_1_2.isObstacle" color="0"/>
     <ConnectionShape InstanceName="RecFile_7.SocketReceiver_3_5_3.eulerAngles.input" color="0"/>
@@ -1588,7 +1852,15 @@
     <ConnectionShape InstanceName="switcher_long.index" color="0"/>
     <ConnectionShape InstanceName="switcher_long.input_1" color="0"/>
     <ConnectionShape InstanceName="switcher_long.input_2" color="0"/>
+    <ConnectionShape InstanceName="TCP_Server.GPSPosition" color="0"/>
+    <ConnectionShape InstanceName="TCPClient_1.input" color="0"/>
+    <ConnectionShape InstanceName="TCPClient_1_1.input" color="0"/>
+    <ConnectionShape InstanceName="Text2Stream_1.inputAscii" color="0"/>
+    <ConnectionShape InstanceName="Text2Stream_1_1.inputAscii" color="0"/>
+    <ConnectionShape InstanceName="toUTM.lat_long" color="0"/>
     <ConnectionShape InstanceName="toUTM.long_lat" color="0"/>
+    <ConnectionShape InstanceName="toUTM1.lat_long" color="0"/>
+    <ConnectionShape InstanceName="toUTM_1.lat_long" color="0"/>
     <ConnectionShape InstanceName="toUTM_1.long_lat" color="0"/>
     <ConnectionShape InstanceName="Vectorizer_1.input1" color="0"/>
     <ConnectionShape InstanceName="Vectorizer_1.input2" color="0"/>
@@ -1596,8 +1868,15 @@
     <ConnectionShape InstanceName="Vectorizer_1_1.input2" color="0"/>
     <ConnectionShape InstanceName="Vectorizer_2.input1" color="0"/>
     <ConnectionShape InstanceName="Vectorizer_2.input2" color="0"/>
+    <ConnectionShape InstanceName="Vectorizer_2_1.input1" color="0"/>
+    <ConnectionShape InstanceName="Vectorizer_2_1.input2" color="0"/>
+    <ConnectionShape InstanceName="Vectorizer_3.input1" color="0"/>
+    <ConnectionShape InstanceName="Vectorizer_3.input2" color="0"/>
+    <ConnectionShape InstanceName="Vectorizer_3_1.input1" color="0"/>
+    <ConnectionShape InstanceName="Vectorizer_3_1.input2" color="0"/>
     <ConnectionShape InstanceName="viewverXY.input_0" color="0"/>
     <ConnectionShape InstanceName="viewverXY.input_1" color="0"/>
+    <ConnectionShape InstanceName="viewverXY.input_2" color="0"/>
     <ConnectionShape InstanceName="Vlat.hommeMort" color="0"/>
     <ConnectionShape InstanceName="Vlat.size" color="0"/>
     <ConnectionShape InstanceName="Vlat.Vlat" color="0"/>
